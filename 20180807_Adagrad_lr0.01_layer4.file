@@ -1,0 +1,521 @@
+nohup: ignoring input
+/u01/why/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+WARNING:tensorflow:From /u01/why/anaconda3/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:170: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+2018-08-08 08:30:05.195942: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-08 08:30:05.195983: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-08 08:30:05.195991: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-08 08:30:05.195997: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-08 08:30:05.196002: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-08 08:30:05.456128: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti
+major: 6 minor: 1 memoryClockRate (GHz) 1.6325
+pciBusID 0000:05:00.0
+Total memory: 10.91GiB
+Free memory: 10.75GiB
+2018-08-08 08:30:05.456185: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 
+2018-08-08 08:30:05.456195: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y 
+2018-08-08 08:30:05.456208: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:05:00.0)
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+2018-08-08 08:38:43.335277: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 30098 get requests, put_count=30097 evicted_count=1000 eviction_rate=0.0332259 and unsatisfied allocation rate=0.0365805
+2018-08-08 08:38:43.335381: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 100 to 110
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+2018-08-08 09:56:07.609763: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 30955 get requests, put_count=30955 evicted_count=1000 eviction_rate=0.032305 and unsatisfied allocation rate=0.033048
+2018-08-08 09:56:07.609862: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 256 to 281
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+(145050, 81)
+len(self.embedding):  Tensor("lm/Reshape:0", shape=(256, 40, 64), dtype=float32, device=/device:CPU:0)
+len(self.embedding_reverse):  Tensor("lm/Reshape_1:0", shape=(256, 40, 64), dtype=float32, device=/device:CPU:0)
+embedding Tensor("lm/Reshape:0", shape=(256, 40, 64), dtype=float32, device=/device:CPU:0)
+USING SKIP CONNECTIONS
+len(_lstm_output_unpacked):  40
+lstm_output_flat Tensor("lm/Reshape_2:0", shape=(10240, 64), dtype=float32, device=/device:GPU:0)
+len(_lstm_output_unpacked):  40
+lstm_output_flat Tensor("lm/Reshape_5:0", shape=(10240, 64), dtype=float32, device=/device:GPU:0)
+running function _build_loss ~~~~~~~~~~~~~~~~~~~~
+[['global_step:0', TensorShape([])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_0/lstm_cell/bias:0',
+  TensorShape([Dimension(2048)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_0/lstm_cell/kernel:0',
+  TensorShape([Dimension(128), Dimension(2048)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_0/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(512), Dimension(64)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_1/lstm_cell/bias:0',
+  TensorShape([Dimension(2048)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_1/lstm_cell/kernel:0',
+  TensorShape([Dimension(128), Dimension(2048)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_1/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(512), Dimension(64)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_2/lstm_cell/bias:0',
+  TensorShape([Dimension(2048)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_2/lstm_cell/kernel:0',
+  TensorShape([Dimension(128), Dimension(2048)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_2/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(512), Dimension(64)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_3/lstm_cell/bias:0',
+  TensorShape([Dimension(2048)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_3/lstm_cell/kernel:0',
+  TensorShape([Dimension(128), Dimension(2048)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_3/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(512), Dimension(64)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_0/lstm_cell/bias:0',
+  TensorShape([Dimension(2048)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_0/lstm_cell/kernel:0',
+  TensorShape([Dimension(128), Dimension(2048)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_0/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(512), Dimension(64)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_1/lstm_cell/bias:0',
+  TensorShape([Dimension(2048)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_1/lstm_cell/kernel:0',
+  TensorShape([Dimension(128), Dimension(2048)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_1/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(512), Dimension(64)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_2/lstm_cell/bias:0',
+  TensorShape([Dimension(2048)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_2/lstm_cell/kernel:0',
+  TensorShape([Dimension(128), Dimension(2048)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_2/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(512), Dimension(64)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_3/lstm_cell/bias:0',
+  TensorShape([Dimension(2048)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_3/lstm_cell/kernel:0',
+  TensorShape([Dimension(128), Dimension(2048)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_3/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(512), Dimension(64)])],
+ ['lm/embedding:0', TensorShape([Dimension(14779), Dimension(32)])],
+ ['lm/softmax/W:0', TensorShape([Dimension(14779), Dimension(32)])],
+ ['lm/softmax/b:0', TensorShape([Dimension(14779)])],
+ ['train_perplexity:0', TensorShape([])]]
+Training for 200 epochs and 114600 batches
+Batch 100, train_perplexity=1402.5028
+Total time: 99.61712765693665
+Batch 200, train_perplexity=1091.4695
+Total time: 185.1126730442047
+Batch 300, train_perplexity=779.99164
+Total time: 282.58795499801636
+Batch 400, train_perplexity=782.8939
+Total time: 367.41071796417236
+Batch 500, train_perplexity=727.02136
+Total time: 452.8910355567932
+Batch 600, train_perplexity=731.3485
+Total time: 538.0661437511444
+Batch 700, train_perplexity=652.57837
+Total time: 622.6340093612671
+Batch 800, train_perplexity=619.5771
+Total time: 707.2097833156586
+Batch 900, train_perplexity=670.35455
+Total time: 792.0700786113739
+Batch 1000, train_perplexity=615.2493
+Total time: 876.7318735122681
+Batch 1100, train_perplexity=688.8902
+Total time: 961.6449356079102
+Batch 1200, train_perplexity=548.6613
+Total time: 1046.5038621425629
+Batch 1300, train_perplexity=645.5658
+Total time: 1138.6772286891937
+Batch 1400, train_perplexity=632.444
+Total time: 1223.9441177845001
+Batch 1500, train_perplexity=525.82495
+Total time: 1308.9372687339783
+Batch 1600, train_perplexity=504.3187
+Total time: 1393.8331973552704
+Batch 1700, train_perplexity=500.49335
+Total time: 1479.0963978767395
+Batch 1800, train_perplexity=511.42148
+Total time: 1564.2066032886505
+Batch 1900, train_perplexity=527.01154
+Total time: 1648.8781652450562
+Batch 2000, train_perplexity=495.96213
+Total time: 1733.9519803524017
+Batch 2100, train_perplexity=507.9783
+Total time: 1818.8099510669708
+Batch 2200, train_perplexity=575.22107
+Total time: 1903.8235416412354
+Batch 2300, train_perplexity=537.46045
+Total time: 1989.458349943161
+Batch 2400, train_perplexity=474.52982
+Total time: 2074.2977826595306
+Batch 2500, train_perplexity=429.37112
+Total time: 2159.399008989334
+Batch 2600, train_perplexity=488.34677
+Total time: 2251.3222994804382
+Batch 2700, train_perplexity=543.4003
+Total time: 2336.1108989715576
+Batch 2800, train_perplexity=371.84003
+Total time: 2420.9707050323486
+Batch 2900, train_perplexity=477.077
+Total time: 2505.9250650405884
+Batch 3000, train_perplexity=459.68976
+Total time: 2590.491100549698
+Batch 3100, train_perplexity=494.4464
+Total time: 2675.0048179626465
+Batch 3200, train_perplexity=536.7723
+Total time: 2760.376425743103
+Batch 3300, train_perplexity=498.7361
+Total time: 2845.405007839203
+Batch 3400, train_perplexity=482.7936
+Total time: 2930.1902825832367
+Batch 3500, train_perplexity=394.77588
+Total time: 3015.542483329773
+Batch 3600, train_perplexity=470.78693
+Total time: 3100.8212611675262
+Batch 3700, train_perplexity=437.12585
+Total time: 3185.752986431122
+Batch 3800, train_perplexity=465.5249
+Total time: 3277.0723838806152
+Batch 3900, train_perplexity=391.9851
+Total time: 3361.6209659576416
+Batch 4000, train_perplexity=441.54736
+Total time: 3446.2828571796417
+Batch 4100, train_perplexity=444.82843
+Total time: 3531.1080741882324
+Batch 4200, train_perplexity=420.8271
+Total time: 3615.495134830475
+Batch 4300, train_perplexity=425.00812
+Total time: 3700.7598037719727
+Batch 4400, train_perplexity=478.67114
+Total time: 3785.5187532901764
+Batch 4500, train_perplexity=486.496
+Total time: 3870.2274537086487
+Batch 4600, train_perplexity=447.71143
+Total time: 3954.8997886180878
+Batch 4700, train_perplexity=491.74667
+Total time: 4039.7161955833435
+Batch 4800, train_perplexity=404.2655
+Total time: 4124.434846639633
+Batch 4900, train_perplexity=410.7467
+Total time: 4209.603208780289
+Batch 5000, train_perplexity=363.6336
+Total time: 4294.622975826263
+Batch 5100, train_perplexity=457.89038
+Total time: 4386.049971580505
+Batch 5200, train_perplexity=400.9296
+Total time: 4470.842878818512
+Batch 5300, train_perplexity=422.943
+Total time: 4555.687612295151
+Batch 5400, train_perplexity=369.3223
+Total time: 4640.526882648468
+Batch 5500, train_perplexity=377.65134
+Total time: 4725.025647878647
+Batch 5600, train_perplexity=357.66565
+Total time: 4810.097007751465
+Batch 5700, train_perplexity=380.89725
+Total time: 4895.206804990768
+Batch 5800, train_perplexity=366.6919
+Total time: 4980.580407381058
+Batch 5900, train_perplexity=378.3673
+Total time: 5065.350567340851
+Batch 6000, train_perplexity=358.5596
+Total time: 5150.235246896744
+Batch 6100, train_perplexity=355.15213
+Total time: 5235.4037935733795
+Batch 6200, train_perplexity=355.7735
+Total time: 5320.090846300125
+Batch 6300, train_perplexity=322.5581
+Total time: 5411.316434144974
+Batch 6400, train_perplexity=308.31735
+Total time: 5495.999266386032
+Batch 6500, train_perplexity=292.85315
+Total time: 5580.86340880394
+Batch 6600, train_perplexity=309.9354
+Total time: 5666.038744926453
+Batch 6700, train_perplexity=309.76385
+Total time: 5750.470443487167
+Batch 6800, train_perplexity=326.8155
+Total time: 5835.443605661392WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+2018-08-08 11:26:44.119216: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 39166 get requests, put_count=39166 evicted_count=1000 eviction_rate=0.0255323 and unsatisfied allocation rate=0.0270388
+2018-08-08 11:26:44.119320: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 655 to 720
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+
+Batch 6900, train_perplexity=277.48416
+Total time: 5919.938098669052
+Batch 7000, train_perplexity=298.88074
+Total time: 6004.611101150513
+Batch 7100, train_perplexity=304.56848
+Total time: 6089.61777806282
+Batch 7200, train_perplexity=264.7346
+Total time: 6174.444442033768
+Batch 7300, train_perplexity=263.8373
+Total time: 6259.48299574852
+Batch 7400, train_perplexity=286.14096
+Total time: 6344.799595832825
+Batch 7500, train_perplexity=264.6147
+Total time: 6429.556548833847
+Batch 7600, train_perplexity=258.2077
+Total time: 6520.555908203125
+Batch 7700, train_perplexity=278.48627
+Total time: 6605.3810160160065
+Batch 7800, train_perplexity=247.5666
+Total time: 6690.377039670944
+Batch 7900, train_perplexity=267.4871
+Total time: 6775.297328233719
+Batch 8000, train_perplexity=265.89798
+Total time: 6860.346649646759
+Batch 8100, train_perplexity=239.44287
+Total time: 6945.333926677704
+Batch 8200, train_perplexity=237.1751
+Total time: 7030.391481876373
+Batch 8300, train_perplexity=266.0758
+Total time: 7115.327166795731
+Batch 8400, train_perplexity=224.03821
+Total time: 7199.932973623276
+Batch 8500, train_perplexity=251.20514
+Total time: 7285.280395269394
+Batch 8600, train_perplexity=241.8857
+Total time: 7369.906371831894
+Batch 8700, train_perplexity=244.46825
+Total time: 7454.709127187729
+Batch 8800, train_perplexity=230.02359
+Total time: 7545.911249637604
+Batch 8900, train_perplexity=214.10928
+Total time: 7631.258172512054
+Batch 9000, train_perplexity=215.60323
+Total time: 7716.340754985809
+Batch 9100, train_perplexity=200.82214
+Total time: 7801.111209630966
+Batch 9200, train_perplexity=216.82784
+Total time: 7885.707655906677
+Batch 9300, train_perplexity=224.31015
+Total time: 7970.742139577866
+Batch 9400, train_perplexity=192.74513
+Total time: 8055.081174612045
+Batch 9500, train_perplexity=215.57845
+Total time: 8139.600872039795
+Batch 9600, train_perplexity=229.48305
+Total time: 8224.169844388962
+Batch 9700, train_perplexity=200.43182
+Total time: 8308.875834941864
+Batch 9800, train_perplexity=204.26164
+Total time: 8393.77803850174
+Batch 9900, train_perplexity=204.94467
+Total time: 8478.277065753937
+Batch 10000, train_perplexity=212.3982
+Total time: 8563.197926521301
+Batch 10100, train_perplexity=197.98152
+Total time: 8653.84867811203
+Batch 10200, train_perplexity=200.64316
+Total time: 8738.812089204788
+Batch 10300, train_perplexity=214.58333
+Total time: 8823.2401471138
+Batch 10400, train_perplexity=195.60182
+Total time: 8908.408351898193
+Batch 10500, train_perplexity=177.2572
+Total time: 8992.89357829094
+Batch 10600, train_perplexity=196.94597
+Total time: 9077.179430007935
+Batch 10700, train_perplexity=177.63203
+Total time: 9161.968641996384
+Batch 10800, train_perplexity=195.2399
+Total time: 9246.821244001389
+Batch 10900, train_perplexity=174.36053
+Total time: 9331.755685329437
+Batch 11000, train_perplexity=167.38243
+Total time: 9416.651258945465
+Batch 11100, train_perplexity=147.81544
+Total time: 9501.264590978622
+Batch 11200, train_perplexity=170.26302
+Total time: 9585.88509273529
+Batch 11300, train_perplexity=166.24379
+Total time: 9677.682861566544
+Batch 11400, train_perplexity=174.33643
+Total time: 9762.62067437172
+Batch 11500, train_perplexity=179.58139
+Total time: 9847.773150205612
+Batch 11600, train_perplexity=159.58984
+Total time: 9932.171171426773
+Batch 11700, train_perplexity=146.75377
+Total time: 10016.88447713852
+Batch 11800, train_perplexity=162.85205
+Total time: 10102.125394105911
+Batch 11900, train_perplexity=163.10602
+Total time: 10187.104281663895
+Batch 12000, train_perplexity=168.84435
+Total time: 10271.415857076645
+Batch 12100, train_perplexity=168.9957
+Total time: 10356.691114664078
+Batch 12200, train_perplexity=176.82202
+Total time: 10441.742119073868
+Batch 12300, train_perplexity=140.85728
+Total time: 10526.383520126343
+Batch 12400, train_perplexity=150.0614
+Total time: 10611.274445533752
+Batch 12500, train_perplexity=156.32529
+Total time: 10696.260481595993
+Batch 12600, train_perplexity=158.2313
+Total time: 10788.176450967789
+Batch 12700, train_perplexity=137.35991
+Total time: 10873.13533782959
+Batch 12800, train_perplexity=158.66322
+Total time: 10958.048481464386
+Batch 12900, train_perplexity=151.24657
+Total time: 11043.392280340195
+Batch 13000, train_perplexity=146.91762
+Total time: 11128.546356201172
+Batch 13100, train_perplexity=152.84206
+Total time: 11213.25552201271
+Batch 13200, train_perplexity=143.58696
+Total time: 11298.334551095963
+Batch 13300, train_perplexity=138.82852
+Total time: 11383.167352437973
+Batch 13400, train_perplexity=137.19064
+Total time: 11469.901151657104
+Batch 13500, train_perplexity=132.25644
+Total time: 11558.803042173386
+Batch 13600, train_perplexity=147.89702
+Total time: 11650.341374635696
+Batch 13700, train_perplexity=152.665
+Total time: 11742.074231863022
+Batch 13800, train_perplexity=143.61272
+Total time: 11841.447324514389
+Batch 13900, train_perplexity=134.64688
+Total time: 11934.403363704681
+Batch 14000, train_perplexity=132.64738
+Total time: 12026.022866249084
+Batch 14100, train_perplexity=115.73722
+Total time: 12117.733026742935
+Batch 14200, train_perplexity=136.17865
+Total time: 12208.663459062576
+Batch 14300, train_perplexity=137.01785
+Total time: 12300.976234674454
+Batch 14400, train_perplexity=117.59576
+Total time: 12393.011850595474
+Batch 14500, train_perplexity=126.902985
+Total time: 12485.116165876389
+Batch 14600, train_perplexity=120.15839
+Total time: 12576.585037708282
+Batch 14700, train_perplexity=124.3162
+Total time: 12668.609129190445
+Batch 14800, train_perplexity=129.67085
+Total time: 12761.101011276245
+Batch 14900, train_perplexity=120.12183
+Total time: 12847.26740193367
+Batch 15000, train_perplexity=123.98965
+Total time: 12932.16624712944
+Batch 15100, train_perplexity=120.441185
+Total time: 13023.403903007507
+Batch 15200, train_perplexity=130.20996
+Total time: 13108.167373418808
+Batch 15300, train_perplexity=124.78776
+Total time: 13192.750163793564
+Batch 15400, train_perplexity=123.86756
+Total time: 13277.201361894608
+Batch 15500, train_perplexity=122.11807
+Total time: 13362.343851566315
+Batch 15600, train_perplexity=122.51135
+Total time: 13447.058744430542
+Batch 15700, train_perplexity=124.85633
+Total time: 13532.239915132523
+Batch 15800, train_perplexity=113.42832
+Total time: 13617.002749443054
+Batch 15900, train_perplexity=107.17334
+Total time: 13701.67762708664
+Batch 16000, train_perplexity=125.1977
+Total time: 13785.800822257996
+Batch 16100, train_perplexity=113.532166
+Total time: 13870.239795684814
+Batch 16200, train_perplexity=114.87351
+Total time: 13955.263773202896
+Batch 16300, train_perplexity=110.13227
+Total time: 14046.165686130524
+Batch 16400, train_perplexity=110.6554
+Total time: 14130.933179616928
+Batch 16500, train_perplexity=113.58252
+Total time: 14216.156440973282
+Batch 16600, train_perplexity=116.61231
+Total time: 14300.580576896667
+Batch 16700, train_perplexity=106.44772
+Total time: 14385.415493249893
+Batch 16800, train_perplexity=125.68267
+Total time: 14470.386849403381
+Batch 16900, train_perplexity=109.68387
+Total time: 14555.473866462708
+Batch 17000, train_perplexity=108.34451
+Total time: 14640.043476581573
+Batch 17100, train_perplexity=113.25208
+Total time: 14724.250288963318
+Batch 17200, train_perplexity=107.58075
+Total time: 14808.752331495285
+Batch 17300, train_perplexity=110.87301
+Total time: 14893.143694162369
+Batch 17400, train_perplexity=113.803604
+Total time: 14977.824181079865
+Batch 17500, train_perplexity=105.439804
+Total time: 15062.634613990784
+Batch 17600, train_perplexity=103.59061
+Total time: 15154.013878583908
+Batch 17700, train_perplexity=102.47957
+Total time: 15238.941736459732
+Batch 17800, train_perplexity=107.83195
+Total time: 15324.209605932236
+Batch 17900, train_perplexity=107.37125
+Total time: 15408.538070440292
+Batch 18000, train_perplexity=103.59713
+Total time: 15492.986615896225
+Batch 18100, train_perplexity=106.28107
+Total time: 15577.450960159302
+Batch 18200, train_perplexity=94.75796
+Total time: 15661.824521303177
+Batch 18300, train_perplexity=110.47436
+Total time: 15746.561269044876
+Batch 18400, train_perplexity=99.23836
+Total time: 15831.402170419693
+Batch 18500, train_perplexity=86.82428
+Total time: 15916.28061056137WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+2018-08-08 14:07:36.806912: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 95468 get requests, put_count=95468 evicted_count=1000 eviction_rate=0.0104747 and unsatisfied allocation rate=0.0120878
+2018-08-08 14:07:36.807014: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 1694 to 1863
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'

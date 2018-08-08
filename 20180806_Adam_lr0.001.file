@@ -1,0 +1,2639 @@
+nohup: ignoring input
+/u01/why/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+WARNING:tensorflow:From /u01/why/anaconda3/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:170: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+2018-08-07 13:44:21.620699: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-07 13:44:21.620740: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-07 13:44:21.620749: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-07 13:44:21.620755: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-07 13:44:21.620761: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-07 13:44:21.888117: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti
+major: 6 minor: 1 memoryClockRate (GHz) 1.6325
+pciBusID 0000:03:00.0
+Total memory: 10.91GiB
+Free memory: 10.65GiB
+2018-08-07 13:44:21.888175: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 
+2018-08-07 13:44:21.888185: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y 
+2018-08-07 13:44:21.888199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:03:00.0)
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+2018-08-07 13:50:10.242602: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 29905 get requests, put_count=29905 evicted_count=1000 eviction_rate=0.0334392 and unsatisfied allocation rate=0.0367831
+2018-08-07 13:50:10.242711: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 100 to 110
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+2018-08-07 14:42:23.321378: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 30313 get requests, put_count=30314 evicted_count=1000 eviction_rate=0.0329881 and unsatisfied allocation rate=0.0337149
+2018-08-07 14:42:23.321470: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 256 to 281
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+(145050, 81)
+len(self.embedding):  Tensor("lm/Reshape:0", shape=(256, 40, 100), dtype=float32, device=/device:CPU:0)
+len(self.embedding_reverse):  Tensor("lm/Reshape_1:0", shape=(256, 40, 100), dtype=float32, device=/device:CPU:0)
+embedding Tensor("lm/Reshape:0", shape=(256, 40, 100), dtype=float32, device=/device:CPU:0)
+USING SKIP CONNECTIONS
+len(_lstm_output_unpacked):  40
+lstm_output_flat Tensor("lm/Reshape_2:0", shape=(10240, 100), dtype=float32, device=/device:GPU:0)
+len(_lstm_output_unpacked):  40
+lstm_output_flat Tensor("lm/Reshape_5:0", shape=(10240, 100), dtype=float32, device=/device:GPU:0)
+running function _build_loss ~~~~~~~~~~~~~~~~~~~~
+[['global_step:0', TensorShape([])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_0/lstm_cell/bias:0',
+  TensorShape([Dimension(3200)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_0/lstm_cell/kernel:0',
+  TensorShape([Dimension(200), Dimension(3200)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_0/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(800), Dimension(100)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_1/lstm_cell/bias:0',
+  TensorShape([Dimension(3200)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_1/lstm_cell/kernel:0',
+  TensorShape([Dimension(200), Dimension(3200)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_1/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(800), Dimension(100)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_0/lstm_cell/bias:0',
+  TensorShape([Dimension(3200)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_0/lstm_cell/kernel:0',
+  TensorShape([Dimension(200), Dimension(3200)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_0/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(800), Dimension(100)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_1/lstm_cell/bias:0',
+  TensorShape([Dimension(3200)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_1/lstm_cell/kernel:0',
+  TensorShape([Dimension(200), Dimension(3200)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_1/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(800), Dimension(100)])],
+ ['lm/embedding:0', TensorShape([Dimension(14779), Dimension(50)])],
+ ['lm/softmax/W:0', TensorShape([Dimension(14779), Dimension(50)])],
+ ['lm/softmax/b:0', TensorShape([Dimension(14779)])],
+ ['train_perplexity:0', TensorShape([])]]
+Training for 200 epochs and 114600 batches
+Batch 100, train_perplexity=314.8381
+Total time: 68.32343912124634
+Batch 200, train_perplexity=122.9144
+Total time: 126.65517830848694
+Batch 300, train_perplexity=60.898067
+Total time: 193.58732271194458
+Batch 400, train_perplexity=39.463085
+Total time: 251.16208958625793
+Batch 500, train_perplexity=31.280117
+Total time: 309.18813014030457
+Batch 600, train_perplexity=28.85504
+Total time: 366.9109742641449
+Batch 700, train_perplexity=27.415083
+Total time: 424.8842713832855
+Batch 800, train_perplexity=27.483917
+Total time: 482.4558050632477
+Batch 900, train_perplexity=24.003033
+Total time: 540.530638217926
+Batch 1000, train_perplexity=25.428955
+Total time: 598.7679343223572
+Batch 1100, train_perplexity=21.357664
+Total time: 656.6451327800751
+Batch 1200, train_perplexity=21.579596
+Total time: 714.425333738327
+Batch 1300, train_perplexity=21.36164
+Total time: 775.6726591587067
+Batch 1400, train_perplexity=20.413628
+Total time: 833.7705194950104
+Batch 1500, train_perplexity=17.415014
+Total time: 892.0655357837677
+Batch 1600, train_perplexity=18.940958
+Total time: 950.028148651123
+Batch 1700, train_perplexity=16.700191
+Total time: 1008.2519822120667
+Batch 1800, train_perplexity=18.675512
+Total time: 1066.366840839386
+Batch 1900, train_perplexity=16.586063
+Total time: 1124.0415217876434
+Batch 2000, train_perplexity=15.2573
+Total time: 1182.08446931839
+Batch 2100, train_perplexity=16.515224
+Total time: 1239.7661592960358
+Batch 2200, train_perplexity=17.125525
+Total time: 1297.4763095378876
+Batch 2300, train_perplexity=16.905079
+Total time: 1355.930900335312
+Batch 2400, train_perplexity=14.874327
+Total time: 1413.922037601471
+Batch 2500, train_perplexity=14.974752
+Total time: 1471.911540031433
+Batch 2600, train_perplexity=15.912491
+Total time: 1533.2002952098846
+Batch 2700, train_perplexity=14.049043
+Total time: 1590.7990317344666
+Batch 2800, train_perplexity=14.503622
+Total time: 1648.5594596862793
+Batch 2900, train_perplexity=15.133316
+Total time: 1706.6256897449493
+Batch 3000, train_perplexity=13.559587
+Total time: 1764.2498273849487
+Batch 3100, train_perplexity=14.475875
+Total time: 1821.6349852085114
+Batch 3200, train_perplexity=14.418239
+Total time: 1879.0509209632874
+Batch 3300, train_perplexity=13.892109
+Total time: 1936.806491613388
+Batch 3400, train_perplexity=13.537666
+Total time: 1994.3442614078522
+Batch 3500, train_perplexity=12.906219
+Total time: 2052.109711408615
+Batch 3600, train_perplexity=11.794387
+Total time: 2110.3091385364532
+Batch 3700, train_perplexity=13.600398
+Total time: 2168.5780680179596
+Batch 3800, train_perplexity=12.482531
+Total time: 2229.6806297302246
+Batch 3900, train_perplexity=13.679444
+Total time: 2287.7529351711273
+Batch 4000, train_perplexity=13.823568
+Total time: 2346.026419878006
+Batch 4100, train_perplexity=12.3127365
+Total time: 2403.7048256397247
+Batch 4200, train_perplexity=11.486737
+Total time: 2461.2296426296234
+Batch 4300, train_perplexity=12.653017
+Total time: 2517.59526181221
+Batch 4400, train_perplexity=12.540706
+Total time: 2574.0772626399994
+Batch 4500, train_perplexity=11.085038
+Total time: 2630.2524361610413
+Batch 4600, train_perplexity=12.584285
+Total time: 2686.22176861763
+Batch 4700, train_perplexity=12.583031
+Total time: 2742.7840700149536
+Batch 4800, train_perplexity=13.070008
+Total time: 2799.0800971984863
+Batch 4900, train_perplexity=10.648915
+Total time: 2855.414452314377
+Batch 5000, train_perplexity=12.612429
+Total time: 2911.853902578354
+Batch 5100, train_perplexity=12.535283
+Total time: 2971.9979968070984
+Batch 5200, train_perplexity=11.828619
+Total time: 3027.9250462055206
+Batch 5300, train_perplexity=11.557009
+Total time: 3084.587636947632
+Batch 5400, train_perplexity=10.378444
+Total time: 3141.1555383205414
+Batch 5500, train_perplexity=12.791836
+Total time: 3197.4378967285156
+Batch 5600, train_perplexity=11.100367
+Total time: 3253.553070306778
+Batch 5700, train_perplexity=11.71878
+Total time: 3309.882980108261
+Batch 5800, train_perplexity=11.942415
+Total time: 3366.3657941818237
+Batch 5900, train_perplexity=11.50051
+Total time: 3422.615114927292
+Batch 6000, train_perplexity=11.332074
+Total time: 3479.1854152679443
+Batch 6100, train_perplexity=10.407085
+Total time: 3535.236755847931
+Batch 6200, train_perplexity=10.859655
+Total time: 3591.6676421165466
+Batch 6300, train_perplexity=10.928912
+Total time: 3651.9966807365417
+Batch 6400, train_perplexity=10.974926
+Total time: 3708.320487499237
+Batch 6500, train_perplexity=10.951908
+Total time: 3764.557243347168
+Batch 6600, train_perplexity=11.4140215
+Total time: 3821.209963798523
+Batch 6700, train_perplexity=10.195283
+Total time: 3877.6145939826965
+Batch 6800, train_perplexity=10.5093355
+Total time: 3934.2155768871307
+Batch 6900, train_perplexity=10.796689
+Total time: 3990.2106664180756
+Batch 7000, train_perplexity=9.805896
+Total time: 4046.2168548107147
+Batch 7100, train_perplexity=11.230413
+Total time: 4102.58368062973
+Batch 7200, train_perplexity=10.8415365
+Total time: 4158.921998977661
+Batch 7300, train_perplexity=10.3539
+Total time: 4215.695213317871
+Batch 7400, train_perplexity=9.644299
+Total time: 4271.8789966106415
+Batch 7500, train_perplexity=10.670747
+Total time: 4327.798936843872
+Batch 7600, train_perplexity=11.461192
+Total time: 4387.555197954178
+Batch 7700, train_perplexity=10.517757
+Total time: 4443.780070066452
+Batch 7800, train_perplexity=11.21821
+Total time: 4500.06161403656
+Batch 7900, train_perplexity=11.167225
+Total time: 4556.143608570099
+Batch 8000, train_perplexity=12.021589
+Total time: 4612.724940776825
+Batch 8100, train_perplexity=11.426334
+Total time: 4669.049018859863
+Batch 8200, train_perplexity=10.8818
+Total time: 4725.41179728508
+Batch 8300, train_perplexity=9.276941
+Total time: 4781.502577543259
+Batch 8400, train_perplexity=10.309364
+Total time: 4838.085106611252
+Batch 8500, train_perplexity=10.528857
+Total time: 4894.45698595047
+Batch 8600, train_perplexity=11.031267
+Total time: 4951.194298028946WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+2018-08-07 15:43:04.501367: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 39876 get requests, put_count=39876 evicted_count=1000 eviction_rate=0.0250777 and unsatisfied allocation rate=0.0265573
+2018-08-07 15:43:04.501463: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 655 to 720
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+
+Batch 8700, train_perplexity=9.825184
+Total time: 5007.467305421829
+Batch 8800, train_perplexity=10.597664
+Total time: 5067.494619131088
+Batch 8900, train_perplexity=10.60211
+Total time: 5123.936744451523
+Batch 9000, train_perplexity=10.3886385
+Total time: 5180.094535589218
+Batch 9100, train_perplexity=9.65711
+Total time: 5236.340403079987
+Batch 9200, train_perplexity=9.74801
+Total time: 5292.574670314789
+Batch 9300, train_perplexity=10.042685
+Total time: 5349.057334184647
+Batch 9400, train_perplexity=9.951927
+Total time: 5405.299950838089
+Batch 9500, train_perplexity=10.142682
+Total time: 5461.67455124855
+Batch 9600, train_perplexity=11.259564
+Total time: 5517.872661113739
+Batch 9700, train_perplexity=10.687209
+Total time: 5574.081508159637
+Batch 9800, train_perplexity=9.858856
+Total time: 5630.216692447662
+Batch 9900, train_perplexity=10.353589
+Total time: 5686.466294765472
+Batch 10000, train_perplexity=10.313559
+Total time: 5742.475087881088
+Batch 10100, train_perplexity=11.314043
+Total time: 5802.331229686737
+Batch 10200, train_perplexity=10.080349
+Total time: 5858.634905099869
+Batch 10300, train_perplexity=9.888966
+Total time: 5915.194976806641
+Batch 10400, train_perplexity=10.30416
+Total time: 5971.5859208106995
+Batch 10500, train_perplexity=10.284966
+Total time: 6028.2786865234375
+Batch 10600, train_perplexity=9.480396
+Total time: 6084.582161426544
+Batch 10700, train_perplexity=9.762446
+Total time: 6141.073990821838
+Batch 10800, train_perplexity=10.615414
+Total time: 6197.236597537994
+Batch 10900, train_perplexity=9.668592
+Total time: 6253.559726476669
+Batch 11000, train_perplexity=10.158253
+Total time: 6309.762788057327
+Batch 11100, train_perplexity=10.073718
+Total time: 6366.161251068115
+Batch 11200, train_perplexity=9.447156
+Total time: 6422.4686942100525
+Batch 11300, train_perplexity=8.921526
+Total time: 6482.552489995956
+Batch 11400, train_perplexity=10.048342
+Total time: 6539.077734947205
+Batch 11500, train_perplexity=10.451934
+Total time: 6595.663573741913
+Batch 11600, train_perplexity=9.916229
+Total time: 6651.958386898041
+Batch 11700, train_perplexity=10.681901
+Total time: 6708.696687698364
+Batch 11800, train_perplexity=10.40448
+Total time: 6765.387804031372
+Batch 11900, train_perplexity=10.157276
+Total time: 6821.789952516556
+Batch 12000, train_perplexity=9.983963
+Total time: 6878.433162927628
+Batch 12100, train_perplexity=8.690554
+Total time: 6934.829250097275
+Batch 12200, train_perplexity=10.127099
+Total time: 6991.105505228043
+Batch 12300, train_perplexity=10.9350395
+Total time: 7047.50589466095
+Batch 12400, train_perplexity=9.843894
+Total time: 7103.349415540695
+Batch 12500, train_perplexity=10.52385
+Total time: 7159.671204090118
+Batch 12600, train_perplexity=9.90469
+Total time: 7220.032395839691
+Batch 12700, train_perplexity=9.765847
+Total time: 7276.499289512634
+Batch 12800, train_perplexity=8.878106
+Total time: 7332.626491308212
+Batch 12900, train_perplexity=9.526696
+Total time: 7389.135933637619
+Batch 13000, train_perplexity=9.807135
+Total time: 7445.281786680222
+Batch 13100, train_perplexity=8.98035
+Total time: 7501.622027873993
+Batch 13200, train_perplexity=9.720491
+Total time: 7558.004909038544
+Batch 13300, train_perplexity=9.603301
+Total time: 7614.713738918304
+Batch 13400, train_perplexity=11.082776
+Total time: 7670.7629725933075
+Batch 13500, train_perplexity=9.876016
+Total time: 7727.130526542664
+Batch 13600, train_perplexity=10.041878
+Total time: 7783.452826976776
+Batch 13700, train_perplexity=9.098837
+Total time: 7840.001326799393
+Batch 13800, train_perplexity=9.438558
+Total time: 7899.759869813919
+Batch 13900, train_perplexity=9.625963
+Total time: 7956.341506481171
+Batch 14000, train_perplexity=10.341757
+Total time: 8012.437871456146
+Batch 14100, train_perplexity=9.7045
+Total time: 8068.698452949524
+Batch 14200, train_perplexity=9.47697
+Total time: 8124.633727312088
+Batch 14300, train_perplexity=9.58604
+Total time: 8181.143214464188
+Batch 14400, train_perplexity=9.225242
+Total time: 8237.291907072067
+Batch 14500, train_perplexity=10.347858
+Total time: 8293.777558326721
+Batch 14600, train_perplexity=9.639212
+Total time: 8350.762696266174
+Batch 14700, train_perplexity=9.973542
+Total time: 8406.93130350113
+Batch 14800, train_perplexity=9.986205
+Total time: 8463.362893342972
+Batch 14900, train_perplexity=9.045446
+Total time: 8519.817410230637
+Batch 15000, train_perplexity=9.861294
+Total time: 8575.988145112991
+Batch 15100, train_perplexity=9.140983
+Total time: 8635.524883270264
+Batch 15200, train_perplexity=9.791271
+Total time: 8691.662434101105
+Batch 15300, train_perplexity=9.276172
+Total time: 8747.996159791946
+Batch 15400, train_perplexity=8.88777
+Total time: 8804.387423992157
+Batch 15500, train_perplexity=9.603072
+Total time: 8860.905042648315
+Batch 15600, train_perplexity=9.984862
+Total time: 8917.21714758873
+Batch 15700, train_perplexity=10.459532
+Total time: 8973.649390220642
+Batch 15800, train_perplexity=8.25312
+Total time: 9030.011875867844
+Batch 15900, train_perplexity=8.905163
+Total time: 9086.175543308258
+Batch 16000, train_perplexity=10.084094
+Total time: 9142.343420267105
+Batch 16100, train_perplexity=8.948246
+Total time: 9198.469499588013
+Batch 16200, train_perplexity=8.900413
+Total time: 9254.742202758789
+Batch 16300, train_perplexity=8.74037
+Total time: 9313.910183668137
+Batch 16400, train_perplexity=9.45688
+Total time: 9370.053673505783
+Batch 16500, train_perplexity=9.29608
+Total time: 9426.223070144653
+Batch 16600, train_perplexity=9.067942
+Total time: 9482.580023288727
+Batch 16700, train_perplexity=9.586528
+Total time: 9539.085054397583
+Batch 16800, train_perplexity=9.7812195
+Total time: 9595.474217414856
+Batch 16900, train_perplexity=9.153937
+Total time: 9651.797954559326
+Batch 17000, train_perplexity=9.364429
+Total time: 9708.197774410248
+Batch 17100, train_perplexity=9.859651
+Total time: 9764.594179391861
+Batch 17200, train_perplexity=9.699217
+Total time: 9820.892035245895
+Batch 17300, train_perplexity=9.352114
+Total time: 9877.187553405762
+Batch 17400, train_perplexity=8.845718
+Total time: 9933.411785840988
+Batch 17500, train_perplexity=8.925641
+Total time: 9989.552494764328
+Batch 17600, train_perplexity=9.441566
+Total time: 10049.304873228073
+Batch 17700, train_perplexity=8.934826
+Total time: 10105.778453826904
+Batch 17800, train_perplexity=10.011084
+Total time: 10162.155871152878
+Batch 17900, train_perplexity=9.67791
+Total time: 10218.56551861763
+Batch 18000, train_perplexity=9.129243
+Total time: 10274.780836820602
+Batch 18100, train_perplexity=9.431166
+Total time: 10331.099145174026
+Batch 18200, train_perplexity=9.324635
+Total time: 10387.251406908035
+Batch 18300, train_perplexity=9.737564
+Total time: 10443.664190530777
+Batch 18400, train_perplexity=9.346207
+Total time: 10499.656375408173
+Batch 18500, train_perplexity=8.66655
+Total time: 10556.09657740593
+Batch 18600, train_perplexity=8.760636
+Total time: 10612.769674062729
+Batch 18700, train_perplexity=9.02883
+Total time: 10668.836454629898
+Batch 18800, train_perplexity=9.5673895
+Total time: 10728.489519119263
+Batch 18900, train_perplexity=9.26217
+Total time: 10784.953635454178
+Batch 19000, train_perplexity=10.14338
+Total time: 10841.213154554367
+Batch 19100, train_perplexity=8.809617
+Total time: 10897.599457502365
+Batch 19200, train_perplexity=9.254033
+Total time: 10953.46318411827
+Batch 19300, train_perplexity=9.179483
+Total time: 11010.098677635193
+Batch 19400, train_perplexity=8.8352995
+Total time: 11066.656201601028
+Batch 19500, train_perplexity=8.899598
+Total time: 11122.873990774155
+Batch 19600, train_perplexity=8.571815
+Total time: 11178.806413173676
+Batch 19700, train_perplexity=10.072162
+Total time: 11234.745697021484
+Batch 19800, train_perplexity=9.832358
+Total time: 11291.262572288513
+Batch 19900, train_perplexity=9.432265
+Total time: 11347.49480342865
+Batch 20000, train_perplexity=9.186862
+Total time: 11403.793437719345
+Batch 20100, train_perplexity=9.194211
+Total time: 11463.283731937408
+Batch 20200, train_perplexity=8.743601
+Total time: 11519.696255683899
+Batch 20300, train_perplexity=9.20545
+Total time: 11576.352094650269
+Batch 20400, train_perplexity=9.469196
+Total time: 11632.693144798279
+Batch 20500, train_perplexity=8.778WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+2018-08-07 17:27:19.453794: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 95496 get requests, put_count=95497 evicted_count=1000 eviction_rate=0.0104715 and unsatisfied allocation rate=0.0120738
+2018-08-07 17:27:19.453891: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 1694 to 1863
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+
+Total time: 11688.877754449844
+Batch 20600, train_perplexity=9.196307
+Total time: 11745.192967653275
+Batch 20700, train_perplexity=9.569744
+Total time: 11801.583466053009
+Batch 20800, train_perplexity=8.854665
+Total time: 11858.00004696846
+Batch 20900, train_perplexity=8.678545
+Total time: 11914.252383708954
+Batch 21000, train_perplexity=8.913034
+Total time: 11970.380653858185
+Batch 21100, train_perplexity=9.079321
+Total time: 12026.317020654678
+Batch 21200, train_perplexity=8.705916
+Total time: 12082.554619312286
+Batch 21300, train_perplexity=9.009571
+Total time: 12141.830450057983
+Batch 21400, train_perplexity=9.326182
+Total time: 12197.932883501053
+Batch 21500, train_perplexity=8.755247
+Total time: 12254.13265991211
+Batch 21600, train_perplexity=8.72192
+Total time: 12310.031451702118
+Batch 21700, train_perplexity=9.438936
+Total time: 12366.48048210144
+Batch 21800, train_perplexity=9.119386
+Total time: 12422.634324789047
+Batch 21900, train_perplexity=8.722688
+Total time: 12479.330201625824
+Batch 22000, train_perplexity=9.742241
+Total time: 12535.588223457336
+Batch 22100, train_perplexity=9.08084
+Total time: 12592.099253416061
+Batch 22200, train_perplexity=9.670783
+Total time: 12648.614336490631
+Batch 22300, train_perplexity=8.80071
+Total time: 12704.820508480072
+Batch 22400, train_perplexity=8.64062
+Total time: 12761.116286277771
+Batch 22500, train_perplexity=9.294876
+Total time: 12817.2892203331
+Batch 22600, train_perplexity=8.561354
+Total time: 12876.386209726334
+Batch 22700, train_perplexity=9.536099
+Total time: 12932.74681019783
+Batch 22800, train_perplexity=9.257936
+Total time: 12988.61560869217
+Batch 22900, train_perplexity=8.896437
+Total time: 13045.20251083374
+Batch 23000, train_perplexity=9.58513
+Total time: 13101.500160694122
+Batch 23100, train_perplexity=8.273985
+Total time: 13157.843007087708
+Batch 23200, train_perplexity=7.591068
+Total time: 13214.857599258423
+Batch 23300, train_perplexity=8.226435
+Total time: 13271.61859869957
+Batch 23400, train_perplexity=8.711502
+Total time: 13327.929982423782
+Batch 23500, train_perplexity=8.722902
+Total time: 13384.273927927017
+Batch 23600, train_perplexity=9.802062
+Total time: 13440.438948631287
+Batch 23700, train_perplexity=9.077113
+Total time: 13496.663548707962
+Batch 23800, train_perplexity=9.242158
+Total time: 13556.546936511993
+Batch 23900, train_perplexity=8.571369
+Total time: 13613.127056837082
+Batch 24000, train_perplexity=9.360883
+Total time: 13669.584749937057
+Batch 24100, train_perplexity=8.495436
+Total time: 13725.81337594986
+Batch 24200, train_perplexity=8.924105
+Total time: 13782.408567667007
+Batch 24300, train_perplexity=9.667911
+Total time: 13838.319808959961
+Batch 24400, train_perplexity=8.912025
+Total time: 13894.844571828842
+Batch 24500, train_perplexity=9.327228
+Total time: 13951.089320659637
+Batch 24600, train_perplexity=8.879413
+Total time: 14007.19149851799
+Batch 24700, train_perplexity=9.613995
+Total time: 14063.434875965118
+Batch 24800, train_perplexity=9.548157
+Total time: 14119.720893383026
+Batch 24900, train_perplexity=9.808439
+Total time: 14175.89258646965
+Batch 25000, train_perplexity=9.708626
+Total time: 14232.229865789413
+Batch 25100, train_perplexity=8.872776
+Total time: 14291.929823160172
+Batch 25200, train_perplexity=8.155254
+Total time: 14348.054494857788
+Batch 25300, train_perplexity=9.327192
+Total time: 14404.1672539711
+Batch 25400, train_perplexity=9.253001
+Total time: 14460.5349547863
+Batch 25500, train_perplexity=9.097426
+Total time: 14516.745132684708
+Batch 25600, train_perplexity=9.2864485
+Total time: 14572.822784423828
+Batch 25700, train_perplexity=9.031702
+Total time: 14629.332087755203
+Batch 25800, train_perplexity=9.417615
+Total time: 14685.766179084778
+Batch 25900, train_perplexity=9.357985
+Total time: 14742.171351909637
+Batch 26000, train_perplexity=9.439622
+Total time: 14798.573199987411
+Batch 26100, train_perplexity=8.984881
+Total time: 14855.22094154358
+Batch 26200, train_perplexity=9.705745
+Total time: 14911.627718687057
+Batch 26300, train_perplexity=8.294483
+Total time: 14971.233151435852
+Batch 26400, train_perplexity=8.268869
+Total time: 15027.441506624222
+Batch 26500, train_perplexity=8.345562
+Total time: 15083.78937125206
+Batch 26600, train_perplexity=8.324876
+Total time: 15139.992281198502
+Batch 26700, train_perplexity=9.149691
+Total time: 15196.909699201584
+Batch 26800, train_perplexity=9.780561
+Total time: 15253.21568608284
+Batch 26900, train_perplexity=8.9364195
+Total time: 15309.684480190277
+Batch 27000, train_perplexity=9.79742
+Total time: 15365.839946746826
+Batch 27100, train_perplexity=8.931505
+Total time: 15422.361424922943
+Batch 27200, train_perplexity=8.263865
+Total time: 15478.513583660126
+Batch 27300, train_perplexity=9.925689
+Total time: 15535.051415920258
+Batch 27400, train_perplexity=10.083916
+Total time: 15591.70784664154
+Batch 27500, train_perplexity=8.792203
+Total time: 15647.689380645752
+Batch 27600, train_perplexity=8.350219
+Total time: 15707.277232408524
+Batch 27700, train_perplexity=9.37462
+Total time: 15763.894675016403
+Batch 27800, train_perplexity=9.63478
+Total time: 15820.67238163948
+Batch 27900, train_perplexity=9.003264
+Total time: 15876.874450683594
+Batch 28000, train_perplexity=9.057741
+Total time: 15933.357929944992
+Batch 28100, train_perplexity=9.333136
+Total time: 15989.867715120316
+Batch 28200, train_perplexity=8.102917
+Total time: 16046.173300027847
+Batch 28300, train_perplexity=9.319534
+Total time: 16102.272199630737
+Batch 28400, train_perplexity=8.467982
+Total time: 16158.723726987839
+Batch 28500, train_perplexity=8.355006
+Total time: 16215.230599164963
+Batch 28600, train_perplexity=8.483726
+Total time: 16271.540453195572
+Batch 28700, train_perplexity=8.449728
+Total time: 16327.838114500046
+Batch 28800, train_perplexity=10.001397
+Total time: 16387.161531209946
+Batch 28900, train_perplexity=9.165992
+Total time: 16443.77696108818
+Batch 29000, train_perplexity=9.133255
+Total time: 16499.747438907623
+Batch 29100, train_perplexity=9.141865
+Total time: 16556.18522310257
+Batch 29200, train_perplexity=9.066227
+Total time: 16612.435868024826
+Batch 29300, train_perplexity=8.417346
+Total time: 16668.580951929092
+Batch 29400, train_perplexity=8.53668
+Total time: 16725.093282699585
+Batch 29500, train_perplexity=7.470978
+Total time: 16781.620629549026
+Batch 29600, train_perplexity=8.173699
+Total time: 16837.938504695892
+Batch 29700, train_perplexity=8.812627
+Total time: 16894.41866159439
+Batch 29800, train_perplexity=9.872875
+Total time: 16950.782491207123
+Batch 29900, train_perplexity=8.64965
+Total time: 17006.940050125122
+Batch 30000, train_perplexity=8.683909
+Total time: 17063.369319438934
+Batch 30100, train_perplexity=8.412107
+Total time: 17123.497826099396
+Batch 30200, train_perplexity=9.207381
+Total time: 17180.00043296814
+Batch 30300, train_perplexity=9.595197
+Total time: 17236.611391305923
+Batch 30400, train_perplexity=9.060276
+Total time: 17292.802046775818
+Batch 30500, train_perplexity=9.102868
+Total time: 17348.816976308823
+Batch 30600, train_perplexity=9.203574
+Total time: 17405.174782037735
+Batch 30700, train_perplexity=8.552373
+Total time: 17461.266096830368
+Batch 30800, train_perplexity=9.179798
+Total time: 17517.66374731064
+Batch 30900, train_perplexity=9.057488
+Total time: 17574.18180847168
+Batch 31000, train_perplexity=8.635926
+Total time: 17630.80143594742
+Batch 31100, train_perplexity=8.656243
+Total time: 17687.101947784424
+Batch 31200, train_perplexity=8.668168
+Total time: 17743.462598323822
+Batch 31300, train_perplexity=9.047795
+Total time: 17802.868426799774
+Batch 31400, train_perplexity=9.081626
+Total time: 17859.29773759842
+Batch 31500, train_perplexity=7.902184
+Total time: 17915.681789398193
+Batch 31600, train_perplexity=7.7665877
+Total time: 17972.354979753494
+Batch 31700, train_perplexity=8.651918
+Total time: 18028.817976236343
+Batch 31800, train_perplexity=8.888891
+Total time: 18085.77220249176
+Batch 31900, train_perplexity=8.856751
+Total time: 18142.33759045601
+Batch 32000, train_perplexity=8.884732
+Total time: 18198.849466085434
+Batch 32100, train_perplexity=8.747979
+Total time: 18255.324812412262
+Batch 32200, train_perplexity=9.115167
+Total time: 18311.33606362343
+Batch 32300, train_perplexity=9.644064WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+
+Total time: 18367.520534992218
+Batch 32400, train_perplexity=8.533789
+Total time: 18423.553364276886
+Batch 32500, train_perplexity=8.209223
+Total time: 18479.740226984024
+Batch 32600, train_perplexity=8.596616
+Total time: 18539.266305208206
+Batch 32700, train_perplexity=8.848152
+Total time: 18595.319610118866
+Batch 32800, train_perplexity=9.025756
+Total time: 18651.441729307175
+Batch 32900, train_perplexity=8.878326
+Total time: 18707.800154685974
+Batch 33000, train_perplexity=7.840395
+Total time: 18764.027091264725
+Batch 33100, train_perplexity=7.8821554
+Total time: 18820.38568329811
+Batch 33200, train_perplexity=9.156883
+Total time: 18876.963035821915
+Batch 33300, train_perplexity=8.84544
+Total time: 18933.267449855804
+Batch 33400, train_perplexity=9.437935
+Total time: 18989.8611869812
+Batch 33500, train_perplexity=8.59662
+Total time: 19046.316086769104
+Batch 33600, train_perplexity=9.360185
+Total time: 19102.495040655136
+Batch 33700, train_perplexity=8.564058
+Total time: 19159.09254384041
+Batch 33800, train_perplexity=9.398249
+Total time: 19218.674584150314
+Batch 33900, train_perplexity=9.127147
+Total time: 19275.318264722824
+Batch 34000, train_perplexity=8.262658
+Total time: 19331.47373843193
+Batch 34100, train_perplexity=8.434271
+Total time: 19387.411613464355
+Batch 34200, train_perplexity=9.319297
+Total time: 19443.268121004105
+Batch 34300, train_perplexity=8.419351
+Total time: 19499.709852218628
+Batch 34400, train_perplexity=8.927756
+Total time: 19555.958599805832
+Batch 34500, train_perplexity=9.09428
+Total time: 19612.391899347305
+Batch 34600, train_perplexity=8.695454
+Total time: 19668.722558259964
+Batch 34700, train_perplexity=8.502167
+Total time: 19725.046025276184
+Batch 34800, train_perplexity=9.201439
+Total time: 19781.399861574173
+Batch 34900, train_perplexity=8.627806
+Total time: 19837.493248462677
+Batch 35000, train_perplexity=9.219068
+Total time: 19893.943964242935
+Batch 35100, train_perplexity=8.454681
+Total time: 19953.982368707657
+Batch 35200, train_perplexity=9.371822
+Total time: 20009.84580564499
+Batch 35300, train_perplexity=8.140022
+Total time: 20066.268702030182
+Batch 35400, train_perplexity=8.800638
+Total time: 20122.0779004097
+Batch 35500, train_perplexity=8.729191
+Total time: 20178.381566286087
+Batch 35600, train_perplexity=8.770551
+Total time: 20234.758912563324
+Batch 35700, train_perplexity=8.228412
+Total time: 20290.742411613464
+Batch 35800, train_perplexity=9.351209
+Total time: 20346.924199342728
+Batch 35900, train_perplexity=9.471845
+Total time: 20403.31081199646
+Batch 36000, train_perplexity=9.010852
+Total time: 20459.654916524887
+Batch 36100, train_perplexity=9.05046
+Total time: 20516.00505423546
+Batch 36200, train_perplexity=8.979523
+Total time: 20572.1701066494
+Batch 36300, train_perplexity=9.844599
+Total time: 20631.888772010803
+Batch 36400, train_perplexity=8.717203
+Total time: 20688.178545951843
+Batch 36500, train_perplexity=9.416798
+Total time: 20744.490585565567
+Batch 36600, train_perplexity=8.260105
+Total time: 20801.07438468933
+Batch 36700, train_perplexity=8.21817
+Total time: 20857.37013888359
+Batch 36800, train_perplexity=8.185612
+Total time: 20913.53044939041
+Batch 36900, train_perplexity=8.604459
+Total time: 20969.932326078415
+Batch 37000, train_perplexity=8.680701
+Total time: 21026.07229590416
+Batch 37100, train_perplexity=8.733527
+Total time: 21082.220274925232
+Batch 37200, train_perplexity=8.375928
+Total time: 21138.554153442383
+Batch 37300, train_perplexity=8.547472
+Total time: 21195.003779411316
+Batch 37400, train_perplexity=8.14762
+Total time: 21251.49879384041
+Batch 37500, train_perplexity=8.529023
+Total time: 21307.67879962921
+Batch 37600, train_perplexity=8.767578
+Total time: 21367.05051755905
+Batch 37700, train_perplexity=8.989788
+Total time: 21423.489212036133
+Batch 37800, train_perplexity=8.29219
+Total time: 21479.878029584885
+Batch 37900, train_perplexity=9.033166
+Total time: 21536.420392036438
+Batch 38000, train_perplexity=9.222647
+Total time: 21593.14031767845
+Batch 38100, train_perplexity=8.760833
+Total time: 21649.58182644844
+Batch 38200, train_perplexity=8.929093
+Total time: 21705.73576116562
+Batch 38300, train_perplexity=8.689696
+Total time: 21762.363937854767
+Batch 38400, train_perplexity=8.9221
+Total time: 21818.672916173935
+Batch 38500, train_perplexity=8.976616
+Total time: 21874.829186439514
+Batch 38600, train_perplexity=9.212039
+Total time: 21930.975335121155
+Batch 38700, train_perplexity=8.220812
+Total time: 21987.502968788147
+Batch 38800, train_perplexity=8.18073
+Total time: 22047.197868347168
+Batch 38900, train_perplexity=8.894842
+Total time: 22103.653584718704
+Batch 39000, train_perplexity=7.8839846
+Total time: 22160.22322821617
+Batch 39100, train_perplexity=9.256995
+Total time: 22216.64301753044
+Batch 39200, train_perplexity=8.326895
+Total time: 22273.136320114136
+Batch 39300, train_perplexity=8.893243
+Total time: 22329.32322049141
+Batch 39400, train_perplexity=8.838878
+Total time: 22385.719201803207
+Batch 39500, train_perplexity=8.940635
+Total time: 22442.099564552307
+Batch 39600, train_perplexity=9.277308
+Total time: 22498.322620868683
+Batch 39700, train_perplexity=8.663385
+Total time: 22554.739217042923
+Batch 39800, train_perplexity=8.625752
+Total time: 22610.94485425949
+Batch 39900, train_perplexity=8.984746
+Total time: 22667.22139263153
+Batch 40000, train_perplexity=9.058097
+Total time: 22723.45265007019
+Batch 40100, train_perplexity=8.588927
+Total time: 22782.710275888443
+Batch 40200, train_perplexity=8.760312
+Total time: 22838.865558862686
+Batch 40300, train_perplexity=9.23769
+Total time: 22895.510270118713
+Batch 40400, train_perplexity=8.745206
+Total time: 22951.554446220398
+Batch 40500, train_perplexity=9.09865
+Total time: 23008.35262489319
+Batch 40600, train_perplexity=9.245435
+Total time: 23064.40143918991
+Batch 40700, train_perplexity=8.081756
+Total time: 23120.783799171448
+Batch 40800, train_perplexity=8.474796
+Total time: 23177.239693164825
+Batch 40900, train_perplexity=8.284107
+Total time: 23233.504620552063
+Batch 41000, train_perplexity=7.9533587
+Total time: 23289.609178066254
+Batch 41100, train_perplexity=9.175383
+Total time: 23346.026280403137
+Batch 41200, train_perplexity=8.011382
+Total time: 23401.862367868423
+Batch 41300, train_perplexity=8.326629
+Total time: 23461.21296596527
+Batch 41400, train_perplexity=8.861132
+Total time: 23517.347558021545
+Batch 41500, train_perplexity=8.529409
+Total time: 23573.373807907104
+Batch 41600, train_perplexity=8.732492
+Total time: 23629.593616247177
+Batch 41700, train_perplexity=8.993526
+Total time: 23685.797921657562
+Batch 41800, train_perplexity=8.041454
+Total time: 23741.809761047363
+Batch 41900, train_perplexity=8.489561
+Total time: 23798.055218935013
+Batch 42000, train_perplexity=9.418636
+Total time: 23854.12533712387
+Batch 42100, train_perplexity=7.9514513
+Total time: 23910.46989965439
+Batch 42200, train_perplexity=8.221845
+Total time: 23966.754254579544
+Batch 42300, train_perplexity=9.151351
+Total time: 24023.1831073761
+Batch 42400, train_perplexity=9.077371
+Total time: 24079.613833904266
+Batch 42500, train_perplexity=9.869255
+Total time: 24135.87255048752
+Batch 42600, train_perplexity=8.36582
+Total time: 24195.38551545143
+Batch 42700, train_perplexity=8.339573
+Total time: 24251.754539966583
+Batch 42800, train_perplexity=8.720777
+Total time: 24307.888763666153
+Batch 42900, train_perplexity=8.300917
+Total time: 24364.07561159134
+Batch 43000, train_perplexity=8.625222
+Total time: 24420.195299863815
+Batch 43100, train_perplexity=8.48085
+Total time: 24476.702393770218
+Batch 43200, train_perplexity=9.459543
+Total time: 24533.05241751671
+Batch 43300, train_perplexity=7.990549
+Total time: 24589.36131310463
+Batch 43400, train_perplexity=8.885005
+Total time: 24645.476656913757
+Batch 43500, train_perplexity=8.322068
+Total time: 24702.181671142578
+Batch 43600, train_perplexity=8.981223
+Total time: 24758.46877527237
+Batch 43700, train_perplexity=9.072621
+Total time: 24814.678688287735
+Batch 43800, train_perplexity=8.480033
+Total time: 24873.756687879562
+Batch 43900, train_perplexity=8.820125
+Total time: 24930.32987189293
+Batch 44000, train_perplexity=9.3334675
+Total time: 24986.38353228569
+Batch 44100, train_perplexity=8.649978WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+
+Total time: 25042.510802268982
+Batch 44200, train_perplexity=8.599075
+Total time: 25098.662294864655
+Batch 44300, train_perplexity=8.39787
+Total time: 25154.790686130524
+Batch 44400, train_perplexity=8.594743
+Total time: 25211.32934832573
+Batch 44500, train_perplexity=8.907919
+Total time: 25267.556925058365
+Batch 44600, train_perplexity=9.091161
+Total time: 25323.92982172966
+Batch 44700, train_perplexity=8.120444
+Total time: 25379.847068071365
+Batch 44800, train_perplexity=8.415574
+Total time: 25435.92030978203
+Batch 44900, train_perplexity=8.731849
+Total time: 25492.441441059113
+Batch 45000, train_perplexity=7.9042525
+Total time: 25548.562482357025
+Batch 45100, train_perplexity=8.02812
+Total time: 25607.997171640396
+Batch 45200, train_perplexity=8.116558
+Total time: 25664.352620601654
+Batch 45300, train_perplexity=9.231376
+Total time: 25720.675642967224
+Batch 45400, train_perplexity=8.398997
+Total time: 25776.787973880768
+Batch 45500, train_perplexity=8.123405
+Total time: 25833.10818219185
+Batch 45600, train_perplexity=8.044826
+Total time: 25889.49328327179
+Batch 45700, train_perplexity=8.746979
+Total time: 25945.88981819153
+Batch 45800, train_perplexity=8.662569
+Total time: 26002.04742383957
+Batch 45900, train_perplexity=9.314485
+Total time: 26058.7317943573
+Batch 46000, train_perplexity=7.870802
+Total time: 26115.22247648239
+Batch 46100, train_perplexity=9.021298
+Total time: 26171.47269845009
+Batch 46200, train_perplexity=8.273662
+Total time: 26227.91412949562
+Batch 46300, train_perplexity=9.379711
+Total time: 26288.176028728485
+Batch 46400, train_perplexity=9.087606
+Total time: 26344.037150144577
+Batch 46500, train_perplexity=9.483376
+Total time: 26400.233607053757
+Batch 46600, train_perplexity=8.795054
+Total time: 26456.677241563797
+Batch 46700, train_perplexity=8.581122
+Total time: 26513.26171374321
+Batch 46800, train_perplexity=8.288453
+Total time: 26569.83421230316
+Batch 46900, train_perplexity=8.523472
+Total time: 26626.269968271255
+Batch 47000, train_perplexity=8.682038
+Total time: 26682.388894081116
+Batch 47100, train_perplexity=9.607826
+Total time: 26738.489778280258
+Batch 47200, train_perplexity=8.295547
+Total time: 26794.838006973267
+Batch 47300, train_perplexity=8.767607
+Total time: 26851.51095342636
+Batch 47400, train_perplexity=8.676592
+Total time: 26907.838856220245
+Batch 47500, train_perplexity=8.898689
+Total time: 26964.128050088882
+Batch 47600, train_perplexity=7.8409653
+Total time: 27024.081221818924
+Batch 47700, train_perplexity=8.232378
+Total time: 27080.439920425415
+Batch 47800, train_perplexity=8.626536
+Total time: 27136.783080101013
+Batch 47900, train_perplexity=8.35821
+Total time: 27193.103107213974
+Batch 48000, train_perplexity=8.3986225
+Total time: 27249.529012441635
+Batch 48100, train_perplexity=8.553534
+Total time: 27305.715533018112
+Batch 48200, train_perplexity=8.460267
+Total time: 27361.687083244324
+Batch 48300, train_perplexity=8.623168
+Total time: 27418.306782484055
+Batch 48400, train_perplexity=8.746265
+Total time: 27474.56260895729
+Batch 48500, train_perplexity=8.374195
+Total time: 27531.047880411148
+Batch 48600, train_perplexity=8.302452
+Total time: 27587.575838327408
+Batch 48700, train_perplexity=8.976445
+Total time: 27643.93297624588
+Batch 48800, train_perplexity=8.382987
+Total time: 27703.616302728653
+Batch 48900, train_perplexity=8.531128
+Total time: 27760.18046092987
+Batch 49000, train_perplexity=8.177887
+Total time: 27816.56896853447
+Batch 49100, train_perplexity=8.0492115
+Total time: 27872.754155874252
+Batch 49200, train_perplexity=8.381734
+Total time: 27929.01777291298
+Batch 49300, train_perplexity=9.039187
+Total time: 27985.26906991005
+Batch 49400, train_perplexity=8.750187
+Total time: 28041.59514784813
+Batch 49500, train_perplexity=7.7310114
+Total time: 28098.132997512817
+Batch 49600, train_perplexity=8.023588
+Total time: 28154.628368616104
+Batch 49700, train_perplexity=8.256334
+Total time: 28210.82222890854
+Batch 49800, train_perplexity=8.610261
+Total time: 28267.410123586655
+Batch 49900, train_perplexity=8.223997
+Total time: 28323.78254008293
+Batch 50000, train_perplexity=8.487141
+Total time: 28380.20801281929
+Batch 50100, train_perplexity=9.014522
+Total time: 28439.78969311714
+Batch 50200, train_perplexity=7.717805
+Total time: 28495.874754667282
+Batch 50300, train_perplexity=9.068382
+Total time: 28552.227793455124
+Batch 50400, train_perplexity=8.745114
+Total time: 28608.301404476166
+Batch 50500, train_perplexity=8.610769
+Total time: 28664.7020277977
+Batch 50600, train_perplexity=8.439885
+Total time: 28721.01415348053
+Batch 50700, train_perplexity=8.356644
+Total time: 28777.13570690155
+Batch 50800, train_perplexity=8.960193
+Total time: 28833.669703722
+Batch 50900, train_perplexity=8.694927
+Total time: 28889.794547319412
+Batch 51000, train_perplexity=8.893101
+Total time: 28946.07174897194
+Batch 51100, train_perplexity=9.344801
+Total time: 29002.31182026863
+Batch 51200, train_perplexity=8.093707
+Total time: 29058.359114170074
+Batch 51300, train_perplexity=8.360446
+Total time: 29117.972608804703
+Batch 51400, train_perplexity=9.040205
+Total time: 29174.682231903076
+Batch 51500, train_perplexity=8.960868
+Total time: 29231.09289097786
+Batch 51600, train_perplexity=8.657775
+Total time: 29287.17679309845
+Batch 51700, train_perplexity=7.8173842
+Total time: 29343.433895111084
+Batch 51800, train_perplexity=8.077836
+Total time: 29399.854583501816
+Batch 51900, train_perplexity=9.094783
+Total time: 29455.985448122025
+Batch 52000, train_perplexity=7.9275494
+Total time: 29512.11946964264
+Batch 52100, train_perplexity=8.325404
+Total time: 29568.443127155304
+Batch 52200, train_perplexity=8.699547
+Total time: 29624.970561742783
+Batch 52300, train_perplexity=8.290539
+Total time: 29681.34602022171
+Batch 52400, train_perplexity=8.9396715
+Total time: 29737.68005299568
+Batch 52500, train_perplexity=8.549794
+Total time: 29793.63524580002
+Batch 52600, train_perplexity=7.9290996
+Total time: 29853.144500494003
+Batch 52700, train_perplexity=8.107046
+Total time: 29909.259657382965
+Batch 52800, train_perplexity=8.6077585
+Total time: 29965.602090597153
+Batch 52900, train_perplexity=8.155357
+Total time: 30022.04526734352
+Batch 53000, train_perplexity=8.733666
+Total time: 30078.52094101906
+Batch 53100, train_perplexity=8.863306
+Total time: 30134.973289489746
+Batch 53200, train_perplexity=8.365323
+Total time: 30191.028015613556
+Batch 53300, train_perplexity=9.43572
+Total time: 30247.286651611328
+Batch 53400, train_perplexity=8.465917
+Total time: 30303.825920581818
+Batch 53500, train_perplexity=8.431588
+Total time: 30360.65410733223
+Batch 53600, train_perplexity=7.647768
+Total time: 30417.012739658356
+Batch 53700, train_perplexity=8.793748
+Total time: 30473.581611394882
+Batch 53800, train_perplexity=7.8317914
+Total time: 30533.084021806717
+Batch 53900, train_perplexity=8.849633
+Total time: 30589.476122379303
+Batch 54000, train_perplexity=7.9045167
+Total time: 30646.042892932892
+Batch 54100, train_perplexity=8.109283
+Total time: 30702.484019756317
+Batch 54200, train_perplexity=8.007854
+Total time: 30758.76217150688
+Batch 54300, train_perplexity=8.5700655
+Total time: 30815.01739215851
+Batch 54400, train_perplexity=8.310239
+Total time: 30871.60185289383
+Batch 54500, train_perplexity=7.9566307
+Total time: 30928.06087064743
+Batch 54600, train_perplexity=7.9646134
+Total time: 30984.25346302986
+Batch 54700, train_perplexity=9.073041
+Total time: 31040.680235385895
+Batch 54800, train_perplexity=8.218797
+Total time: 31096.66303539276
+Batch 54900, train_perplexity=8.791136
+Total time: 31153.23078894615
+Batch 55000, train_perplexity=9.142159
+Total time: 31209.3789601326
+Batch 55100, train_perplexity=8.51797
+Total time: 31268.91951084137
+Batch 55200, train_perplexity=7.2994823
+Total time: 31325.243410348892
+Batch 55300, train_perplexity=8.29165
+Total time: 31381.445814609528
+Batch 55400, train_perplexity=8.289295
+Total time: 31438.108216762543
+Batch 55500, train_perplexity=7.9305816
+Total time: 31494.65807700157
+Batch 55600, train_perplexity=8.3758
+Total time: 31550.70250058174
+Batch 55700, train_perplexity=9.08957
+Total time: 31606.781795024872
+Batch 55800, train_perplexity=8.709924
+Total time: 31662.92013978958
+Batch 55900, train_perplexity=8.086513WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+
+Total time: 31719.231563329697
+Batch 56000, train_perplexity=8.154383
+Total time: 31775.73623394966
+Batch 56100, train_perplexity=8.344987
+Total time: 31832.438636302948
+Batch 56200, train_perplexity=8.186532
+Total time: 31888.50169324875
+Batch 56300, train_perplexity=8.33033
+Total time: 31948.439620494843
+Batch 56400, train_perplexity=8.724672
+Total time: 32004.77777504921
+Batch 56500, train_perplexity=7.842943
+Total time: 32061.17386865616
+Batch 56600, train_perplexity=8.264084
+Total time: 32117.514417409897
+Batch 56700, train_perplexity=8.764284
+Total time: 32173.86413502693
+Batch 56800, train_perplexity=8.673221
+Total time: 32229.86544442177
+Batch 56900, train_perplexity=8.374359
+Total time: 32286.048795938492
+Batch 57000, train_perplexity=8.548467
+Total time: 32342.05135202408
+Batch 57100, train_perplexity=8.107987
+Total time: 32398.394627571106
+Batch 57200, train_perplexity=8.316971
+Total time: 32454.681348085403
+Batch 57300, train_perplexity=8.021473
+Total time: 32511.02543926239
+Batch 57400, train_perplexity=8.5683
+Total time: 32567.097140789032
+Batch 57500, train_perplexity=8.482796
+Total time: 32623.238217830658
+Batch 57600, train_perplexity=8.711677
+Total time: 32682.961843013763
+Batch 57700, train_perplexity=7.7643013
+Total time: 32738.87828040123
+Batch 57800, train_perplexity=7.69431
+Total time: 32794.878849983215
+Batch 57900, train_perplexity=9.113839
+Total time: 32851.332225084305
+Batch 58000, train_perplexity=8.209295
+Total time: 32907.5385992527
+Batch 58100, train_perplexity=8.77206
+Total time: 32964.51668763161
+Batch 58200, train_perplexity=8.321681
+Total time: 33020.64938402176
+Batch 58300, train_perplexity=8.442711
+Total time: 33076.58938789368
+Batch 58400, train_perplexity=8.806175
+Total time: 33132.934025764465
+Batch 58500, train_perplexity=8.73901
+Total time: 33189.249955415726
+Batch 58600, train_perplexity=8.303569
+Total time: 33245.281777620316
+Batch 58700, train_perplexity=9.3742075
+Total time: 33301.28162455559
+Batch 58800, train_perplexity=8.294712
+Total time: 33360.721489429474
+Batch 58900, train_perplexity=8.921452
+Total time: 33417.00049877167
+Batch 59000, train_perplexity=8.353819
+Total time: 33473.87561440468
+Batch 59100, train_perplexity=8.408854
+Total time: 33530.08748340607
+Batch 59200, train_perplexity=8.497995
+Total time: 33586.44571566582
+Batch 59300, train_perplexity=8.135763
+Total time: 33642.54357767105
+Batch 59400, train_perplexity=8.556395
+Total time: 33698.95289731026
+Batch 59500, train_perplexity=7.740172
+Total time: 33755.055255413055
+Batch 59600, train_perplexity=7.9919705
+Total time: 33811.17938899994
+Batch 59700, train_perplexity=7.883706
+Total time: 33867.49175834656
+Batch 59800, train_perplexity=8.562229
+Total time: 33924.13430452347
+Batch 59900, train_perplexity=8.123479
+Total time: 33980.30919456482
+Batch 60000, train_perplexity=8.375311
+Total time: 34036.66118812561
+Batch 60100, train_perplexity=9.115076
+Total time: 34095.67679643631
+Batch 60200, train_perplexity=8.647401
+Total time: 34152.09266734123
+Batch 60300, train_perplexity=7.479652
+Total time: 34208.46253013611
+Batch 60400, train_perplexity=8.292365
+Total time: 34264.65357542038
+Batch 60500, train_perplexity=8.822525
+Total time: 34321.28659820557
+Batch 60600, train_perplexity=8.221027
+Total time: 34377.541452884674
+Batch 60700, train_perplexity=8.510439
+Total time: 34433.921805381775
+Batch 60800, train_perplexity=7.679835
+Total time: 34490.19206690788
+Batch 60900, train_perplexity=8.639605
+Total time: 34546.30603003502
+Batch 61000, train_perplexity=8.073787
+Total time: 34602.57747602463
+Batch 61100, train_perplexity=8.5288925
+Total time: 34658.8930439949
+Batch 61200, train_perplexity=8.262102
+Total time: 34715.17081403732
+Batch 61300, train_perplexity=8.717721
+Total time: 34774.902640104294
+Batch 61400, train_perplexity=8.163354
+Total time: 34830.46851301193
+Batch 61500, train_perplexity=9.090342
+Total time: 34885.04038858414
+Batch 61600, train_perplexity=8.275011
+Total time: 34944.52273750305
+Batch 61700, train_perplexity=8.227451
+Total time: 35003.35070729256
+Batch 61800, train_perplexity=8.224897
+Total time: 35056.61412906647
+Batch 61900, train_perplexity=8.522854
+Total time: 35109.62977719307
+Batch 62000, train_perplexity=8.530764
+Total time: 35162.696603536606
+Batch 62100, train_perplexity=8.174473
+Total time: 35215.77220797539
+Batch 62200, train_perplexity=8.845525
+Total time: 35268.74853897095
+Batch 62300, train_perplexity=8.795096
+Total time: 35321.95545363426
+Batch 62400, train_perplexity=8.604777
+Total time: 35375.1591668129
+Batch 62500, train_perplexity=7.1815343
+Total time: 35428.35898709297
+Batch 62600, train_perplexity=8.94643
+Total time: 35484.418159246445
+Batch 62700, train_perplexity=7.9913435
+Total time: 35537.296687603
+Batch 62800, train_perplexity=8.989295
+Total time: 35590.34418416023
+Batch 62900, train_perplexity=9.075278
+Total time: 35643.426832437515
+Batch 63000, train_perplexity=9.0184
+Total time: 35696.41063070297
+Batch 63100, train_perplexity=8.0395565
+Total time: 35749.4699048996
+Batch 63200, train_perplexity=8.557786
+Total time: 35802.518792152405
+Batch 63300, train_perplexity=9.389966
+Total time: 35855.68937444687
+Batch 63400, train_perplexity=8.495072
+Total time: 35908.75841975212
+Batch 63500, train_perplexity=8.46332
+Total time: 35961.837170124054
+Batch 63600, train_perplexity=9.1071205
+Total time: 36014.975647211075
+Batch 63700, train_perplexity=8.697222
+Total time: 36068.117012262344
+Batch 63800, train_perplexity=8.880784
+Total time: 36124.13716387749
+Batch 63900, train_perplexity=8.055048
+Total time: 36178.55666708946
+Batch 64000, train_perplexity=8.444444
+Total time: 36234.673683166504
+Batch 64100, train_perplexity=8.553131
+Total time: 36290.58364677429
+Batch 64200, train_perplexity=8.380207
+Total time: 36346.57186746597
+Batch 64300, train_perplexity=8.369575
+Total time: 36402.736865997314
+Batch 64400, train_perplexity=8.337058
+Total time: 36458.50878024101
+Batch 64500, train_perplexity=8.997847
+Total time: 36514.58953022957
+Batch 64600, train_perplexity=8.510001
+Total time: 36570.55629611015
+Batch 64700, train_perplexity=8.731968
+Total time: 36626.31269097328
+Batch 64800, train_perplexity=8.974853
+Total time: 36682.387180805206
+Batch 64900, train_perplexity=8.253261
+Total time: 36738.534962415695
+Batch 65000, train_perplexity=8.658844
+Total time: 36794.51684117317
+Batch 65100, train_perplexity=7.9153056
+Total time: 36854.02481389046
+Batch 65200, train_perplexity=7.766982
+Total time: 36910.060047626495
+Batch 65300, train_perplexity=8.326653
+Total time: 36966.078370809555
+Batch 65400, train_perplexity=9.173891
+Total time: 37022.350328207016
+Batch 65500, train_perplexity=8.635482
+Total time: 37078.743349313736
+Batch 65600, train_perplexity=7.7321873
+Total time: 37134.98843622208
+Batch 65700, train_perplexity=8.259757
+Total time: 37191.57712960243
+Batch 65800, train_perplexity=8.4988165
+Total time: 37247.73775053024
+Batch 65900, train_perplexity=8.634695
+Total time: 37303.7070851326
+Batch 66000, train_perplexity=8.684121
+Total time: 37360.34265613556
+Batch 66100, train_perplexity=8.167353
+Total time: 37416.19573569298
+Batch 66200, train_perplexity=8.291513
+Total time: 37472.587414741516
+Batch 66300, train_perplexity=7.8492436
+Total time: 37532.02933502197
+Batch 66400, train_perplexity=8.008702
+Total time: 37588.26393651962
+Batch 66500, train_perplexity=8.38794
+Total time: 37644.75765681267
+Batch 66600, train_perplexity=8.476743
+Total time: 37701.15410709381
+Batch 66700, train_perplexity=8.181284
+Total time: 37757.64093565941
+Batch 66800, train_perplexity=8.14218
+Total time: 37813.58563661575
+Batch 66900, train_perplexity=8.183098
+Total time: 37870.02803516388
+Batch 67000, train_perplexity=8.260893
+Total time: 37926.19105529785
+Batch 67100, train_perplexity=8.692968
+Total time: 37982.8090775013
+Batch 67200, train_perplexity=8.646709
+Total time: 38039.294708013535
+Batch 67300, train_perplexity=8.899708
+Total time: 38095.35559153557
+Batch 67400, train_perplexity=8.363295
+Total time: 38151.58875608444
+Batch 67500, train_perplexity=8.1815195
+Total time: 38207.454181194305
+Batch 67600, train_perplexity=7.553194
+Total time: 38267.09662818909
+Batch 67700, train_perplexity=8.571589
+Total time: 38323.42588376999WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+
+Batch 67800, train_perplexity=8.383588
+Total time: 38379.52000570297
+Batch 67900, train_perplexity=8.1107855
+Total time: 38435.53902506828
+Batch 68000, train_perplexity=8.815433
+Total time: 38491.772916316986
+Batch 68100, train_perplexity=8.86883
+Total time: 38548.35332107544
+Batch 68200, train_perplexity=7.9718723
+Total time: 38604.62017202377
+Batch 68300, train_perplexity=8.758226
+Total time: 38660.6440217495
+Batch 68400, train_perplexity=8.675824
+Total time: 38716.62043452263
+Batch 68500, train_perplexity=8.635445
+Total time: 38772.71132016182
+Batch 68600, train_perplexity=9.212445
+Total time: 38829.23398280144
+Batch 68700, train_perplexity=7.9483676
+Total time: 38885.559562921524
+Batch 68800, train_perplexity=8.587467
+Total time: 38945.16273403168
+Batch 68900, train_perplexity=8.153788
+Total time: 39001.207141160965
+Batch 69000, train_perplexity=7.9687653
+Total time: 39057.71684098244
+Batch 69100, train_perplexity=8.8328905
+Total time: 39113.66988134384
+Batch 69200, train_perplexity=8.123843
+Total time: 39169.77056980133
+Batch 69300, train_perplexity=8.409701
+Total time: 39225.943683862686
+Batch 69400, train_perplexity=8.769076
+Total time: 39282.08763694763
+Batch 69500, train_perplexity=8.674482
+Total time: 39338.556472063065
+Batch 69600, train_perplexity=8.128018
+Total time: 39394.38962483406
+Batch 69700, train_perplexity=8.010727
+Total time: 39450.59357023239
+Batch 69800, train_perplexity=7.8916855
+Total time: 39507.20189476013
+Batch 69900, train_perplexity=8.526309
+Total time: 39563.57132077217
+Batch 70000, train_perplexity=9.622292
+Total time: 39619.78697705269
+Batch 70100, train_perplexity=9.008411
+Total time: 39679.28979706764
+Batch 70200, train_perplexity=8.008171
+Total time: 39735.86173033714
+Batch 70300, train_perplexity=8.5355425
+Total time: 39792.07329916954
+Batch 70400, train_perplexity=7.9944363
+Total time: 39848.26582694054
+Batch 70500, train_perplexity=7.769968
+Total time: 39904.48691892624
+Batch 70600, train_perplexity=8.001518
+Total time: 39960.93890810013
+Batch 70700, train_perplexity=8.003856
+Total time: 40016.91215181351
+Batch 70800, train_perplexity=8.410196
+Total time: 40073.12606549263
+Batch 70900, train_perplexity=8.630101
+Total time: 40129.297580718994
+Batch 71000, train_perplexity=7.7895494
+Total time: 40185.608387470245
+Batch 71100, train_perplexity=8.655768
+Total time: 40241.47713851929
+Batch 71200, train_perplexity=8.546192
+Total time: 40297.46383857727
+Batch 71300, train_perplexity=8.723625
+Total time: 40356.75429582596
+Batch 71400, train_perplexity=8.631146
+Total time: 40413.08706021309
+Batch 71500, train_perplexity=7.841451
+Total time: 40469.153903245926
+Batch 71600, train_perplexity=8.003911
+Total time: 40525.34856915474
+Batch 71700, train_perplexity=7.9804583
+Total time: 40581.408722639084
+Batch 71800, train_perplexity=8.0639305
+Total time: 40637.435593128204
+Batch 71900, train_perplexity=7.7307773
+Total time: 40693.86652135849
+Batch 72000, train_perplexity=8.803968
+Total time: 40750.05941081047
+Batch 72100, train_perplexity=8.781343
+Total time: 40806.24541139603
+Batch 72200, train_perplexity=8.300572
+Total time: 40862.514063835144
+Batch 72300, train_perplexity=8.798935
+Total time: 40918.785041093826
+Batch 72400, train_perplexity=7.6798697
+Total time: 40974.90317392349
+Batch 72500, train_perplexity=8.523817
+Total time: 41030.9232749939
+Batch 72600, train_perplexity=8.62886
+Total time: 41090.1896007061
+Batch 72700, train_perplexity=8.566756
+Total time: 41146.093410253525
+Batch 72800, train_perplexity=7.8280506
+Total time: 41202.37986636162
+Batch 72900, train_perplexity=7.8934846
+Total time: 41258.72859501839
+Batch 73000, train_perplexity=8.442838
+Total time: 41314.59429550171
+Batch 73100, train_perplexity=8.333596
+Total time: 41370.73546123505
+Batch 73200, train_perplexity=8.15756
+Total time: 41427.17269086838
+Batch 73300, train_perplexity=8.450367
+Total time: 41483.5282869339
+Batch 73400, train_perplexity=8.075484
+Total time: 41539.834289073944
+Batch 73500, train_perplexity=7.750711
+Total time: 41595.93901801109
+Batch 73600, train_perplexity=8.047786
+Total time: 41652.26527738571
+Batch 73700, train_perplexity=8.258936
+Total time: 41708.71178627014
+Batch 73800, train_perplexity=8.1869755
+Total time: 41768.40694475174
+Batch 73900, train_perplexity=8.224313
+Total time: 41824.46977996826
+Batch 74000, train_perplexity=7.9835224
+Total time: 41880.65879559517
+Batch 74100, train_perplexity=8.6769285
+Total time: 41937.078038454056
+Batch 74200, train_perplexity=7.6911077
+Total time: 41993.29938697815
+Batch 74300, train_perplexity=7.972169
+Total time: 42049.29724049568
+Batch 74400, train_perplexity=8.648256
+Total time: 42105.94957447052
+Batch 74500, train_perplexity=8.304151
+Total time: 42161.9501144886
+Batch 74600, train_perplexity=9.183796
+Total time: 42218.26713681221
+Batch 74700, train_perplexity=8.762792
+Total time: 42274.54984998703
+Batch 74800, train_perplexity=8.76827
+Total time: 42330.932181835175
+Batch 74900, train_perplexity=7.956403
+Total time: 42387.543996334076
+Batch 75000, train_perplexity=7.956748
+Total time: 42444.19867157936
+Batch 75100, train_perplexity=8.064554
+Total time: 42503.4197204113
+Batch 75200, train_perplexity=8.26915
+Total time: 42559.933079481125
+Batch 75300, train_perplexity=8.707922
+Total time: 42616.228526592255
+Batch 75400, train_perplexity=8.392094
+Total time: 42672.36609911919
+Batch 75500, train_perplexity=7.6898537
+Total time: 42728.85808944702
+Batch 75600, train_perplexity=8.526951
+Total time: 42785.25770807266
+Batch 75700, train_perplexity=7.520513
+Total time: 42841.383150815964
+Batch 75800, train_perplexity=8.238659
+Total time: 42897.85720086098
+Batch 75900, train_perplexity=8.084489
+Total time: 42954.18165516853
+Batch 76000, train_perplexity=8.68482
+Total time: 43010.468866586685
+Batch 76100, train_perplexity=7.3777986
+Total time: 43066.73340010643
+Batch 76200, train_perplexity=8.023063
+Total time: 43122.83434009552
+Batch 76300, train_perplexity=8.228824
+Total time: 43182.41676735878
+Batch 76400, train_perplexity=8.636585
+Total time: 43239.20383834839
+Batch 76500, train_perplexity=8.011863
+Total time: 43295.26000189781
+Batch 76600, train_perplexity=8.495211
+Total time: 43351.73554587364
+Batch 76700, train_perplexity=8.693874
+Total time: 43408.109377622604
+Batch 76800, train_perplexity=8.011337
+Total time: 43464.32635593414
+Batch 76900, train_perplexity=8.554514
+Total time: 43520.36606025696
+Batch 77000, train_perplexity=8.429711
+Total time: 43577.13110256195
+Batch 77100, train_perplexity=8.345328
+Total time: 43633.64617681503
+Batch 77200, train_perplexity=8.305672
+Total time: 43689.827572345734
+Batch 77300, train_perplexity=8.250453
+Total time: 43745.77259325981
+Batch 77400, train_perplexity=8.550314
+Total time: 43802.165115594864
+Batch 77500, train_perplexity=8.364131
+Total time: 43858.32652902603
+Batch 77600, train_perplexity=8.343791
+Total time: 43918.23166847229
+Batch 77700, train_perplexity=8.577314
+Total time: 43974.474545001984
+Batch 77800, train_perplexity=9.035493
+Total time: 44030.535568237305
+Batch 77900, train_perplexity=7.939299
+Total time: 44086.782803058624
+Batch 78000, train_perplexity=8.139229
+Total time: 44142.607736349106
+Batch 78100, train_perplexity=8.175921
+Total time: 44198.552322387695
+Batch 78200, train_perplexity=8.631486
+Total time: 44254.950892686844
+Batch 78300, train_perplexity=8.616043
+Total time: 44310.85943508148
+Batch 78400, train_perplexity=8.52641
+Total time: 44366.86241078377
+Batch 78500, train_perplexity=7.9930296
+Total time: 44422.9398522377
+Batch 78600, train_perplexity=8.464714
+Total time: 44478.938569784164
+Batch 78700, train_perplexity=8.003619
+Total time: 44535.30672287941
+Batch 78800, train_perplexity=8.18719
+Total time: 44594.95004057884
+Batch 78900, train_perplexity=8.382341
+Total time: 44651.26511693001
+Batch 79000, train_perplexity=8.16358
+Total time: 44707.41702461243
+Batch 79100, train_perplexity=8.959297
+Total time: 44763.70968127251
+Batch 79200, train_perplexity=9.445191
+Total time: 44819.70323586464
+Batch 79300, train_perplexity=8.093209
+Total time: 44875.99459075928
+Batch 79400, train_perplexity=7.939375
+Total time: 44932.469856500626
+Batch 79500, train_perplexity=8.323201
+Total time: 44988.87627005577
+Batch 79600, train_perplexity=8.217899WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+
+Total time: 45045.15233707428
+Batch 79700, train_perplexity=8.084554
+Total time: 45101.4586417675
+Batch 79800, train_perplexity=8.655191
+Total time: 45157.79294800758
+Batch 79900, train_perplexity=8.988264
+Total time: 45214.70309615135
+Batch 80000, train_perplexity=8.173561
+Total time: 45275.993965387344
+Batch 80100, train_perplexity=8.33744
+Total time: 45334.287098646164
+Batch 80200, train_perplexity=8.386765
+Total time: 45387.716992139816
+Batch 80300, train_perplexity=8.759392
+Total time: 45440.93802881241
+Batch 80400, train_perplexity=8.374942
+Total time: 45494.184977293015
+Batch 80500, train_perplexity=7.5888424
+Total time: 45547.4001019001
+Batch 80600, train_perplexity=8.053106
+Total time: 45600.76481938362
+Batch 80700, train_perplexity=8.260854
+Total time: 45654.218141555786
+Batch 80800, train_perplexity=8.263832
+Total time: 45707.43399834633
+Batch 80900, train_perplexity=8.303965
+Total time: 45760.6540620327
+Batch 81000, train_perplexity=8.924913
+Total time: 45813.82339525223
+Batch 81100, train_perplexity=8.005119
+Total time: 45867.07574033737
+Batch 81200, train_perplexity=8.64991
+Total time: 45920.46508526802
+Batch 81300, train_perplexity=8.4908285
+Total time: 45976.90017747879
+Batch 81400, train_perplexity=8.031518
+Total time: 46030.10887718201
+Batch 81500, train_perplexity=8.933075
+Total time: 46083.25403499603
+Batch 81600, train_perplexity=8.424792
+Total time: 46136.46788263321
+Batch 81700, train_perplexity=8.14188
+Total time: 46189.88369345665
+Batch 81800, train_perplexity=8.372959
+Total time: 46243.47014641762
+Batch 81900, train_perplexity=8.876936
+Total time: 46297.00071692467
+Batch 82000, train_perplexity=8.431082
+Total time: 46350.51122426987
+Batch 82100, train_perplexity=8.16564
+Total time: 46404.07334947586
+Batch 82200, train_perplexity=8.797907
+Total time: 46460.44725394249
+Batch 82300, train_perplexity=8.177426
+Total time: 46516.578869342804
+Batch 82400, train_perplexity=8.00156
+Total time: 46572.63913178444
+Batch 82500, train_perplexity=8.918315
+Total time: 46628.94974446297
+Batch 82600, train_perplexity=7.9969983
+Total time: 46688.25495123863
+Batch 82700, train_perplexity=8.310594
+Total time: 46744.82047653198
+Batch 82800, train_perplexity=7.844239
+Total time: 46801.303038835526
+Batch 82900, train_perplexity=7.9276404
+Total time: 46857.59826254845
+Batch 83000, train_perplexity=9.125032
+Total time: 46913.74870252609
+Batch 83100, train_perplexity=9.02051
+Total time: 46969.92262148857
+Batch 83200, train_perplexity=8.2299385
+Total time: 47026.36882328987
+Batch 83300, train_perplexity=7.9881945
+Total time: 47082.7843875885
+Batch 83400, train_perplexity=8.54799
+Total time: 47139.419848918915
+Batch 83500, train_perplexity=8.65747
+Total time: 47195.805879592896
+Batch 83600, train_perplexity=9.3794365
+Total time: 47252.50020480156
+Batch 83700, train_perplexity=7.608586
+Total time: 47308.69240760803
+Batch 83800, train_perplexity=7.5680094
+Total time: 47368.42337822914
+Batch 83900, train_perplexity=9.000262
+Total time: 47424.74680542946
+Batch 84000, train_perplexity=7.4429107
+Total time: 47480.974566459656
+Batch 84100, train_perplexity=8.706673
+Total time: 47540.47873663902
+Batch 84200, train_perplexity=8.380594
+Total time: 47600.06804251671
+Batch 84300, train_perplexity=7.698787
+Total time: 47653.224880456924
+Batch 84400, train_perplexity=8.582673
+Total time: 47706.39661407471
+Batch 84500, train_perplexity=8.494744
+Total time: 47759.70956683159
+Batch 84600, train_perplexity=7.95301
+Total time: 47813.04599046707
+Batch 84700, train_perplexity=8.144088
+Total time: 47866.36537003517
+Batch 84800, train_perplexity=8.494759
+Total time: 47919.882452726364
+Batch 84900, train_perplexity=8.889584
+Total time: 47973.10355091095
+Batch 85000, train_perplexity=8.346584
+Total time: 48026.494265794754
+Batch 85100, train_perplexity=7.7422004
+Total time: 48082.93230652809
+Batch 85200, train_perplexity=9.038634
+Total time: 48135.99434399605
+Batch 85300, train_perplexity=7.8080297
+Total time: 48189.25671958923
+Batch 85400, train_perplexity=8.634397
+Total time: 48242.51115131378
+Batch 85500, train_perplexity=8.330179
+Total time: 48295.634593725204
+Batch 85600, train_perplexity=8.433028
+Total time: 48348.70201730728
+Batch 85700, train_perplexity=8.143616
+Total time: 48402.02531337738
+Batch 85800, train_perplexity=8.061038
+Total time: 48455.230026721954
+Batch 85900, train_perplexity=8.141072
+Total time: 48508.50496697426
+Batch 86000, train_perplexity=8.436801
+Total time: 48561.83238720894
+Batch 86100, train_perplexity=7.9980435
+Total time: 48615.11297464371
+Batch 86200, train_perplexity=8.707029
+Total time: 48668.163091897964
+Batch 86300, train_perplexity=7.823871
+Total time: 48724.76197910309
+Batch 86400, train_perplexity=8.4295025
+Total time: 48780.7884657383
+Batch 86500, train_perplexity=8.223576
+Total time: 48836.8266825676
+Batch 86600, train_perplexity=8.944262
+Total time: 48892.73424458504
+Batch 86700, train_perplexity=8.377526
+Total time: 48949.11196398735
+Batch 86800, train_perplexity=8.549433
+Total time: 49005.42439556122
+Batch 86900, train_perplexity=8.691541
+Total time: 49061.91425848007
+Batch 87000, train_perplexity=8.009002
+Total time: 49118.3673145771
+Batch 87100, train_perplexity=7.981718
+Total time: 49174.424867391586
+Batch 87200, train_perplexity=8.452844
+Total time: 49230.86492419243
+Batch 87300, train_perplexity=7.657164
+Total time: 49287.13105034828
+Batch 87400, train_perplexity=8.543151
+Total time: 49343.69692468643
+Batch 87500, train_perplexity=8.389955
+Total time: 49400.17710208893
+Batch 87600, train_perplexity=7.1563635
+Total time: 49459.66499590874
+Batch 87700, train_perplexity=7.651941
+Total time: 49515.95791339874
+Batch 87800, train_perplexity=8.325293
+Total time: 49572.252467393875
+Batch 87900, train_perplexity=8.159385
+Total time: 49628.65580320358
+Batch 88000, train_perplexity=7.803807
+Total time: 49684.96807003021
+Batch 88100, train_perplexity=7.3636384
+Total time: 49741.32395148277
+Batch 88200, train_perplexity=8.186562
+Total time: 49797.539425849915
+Batch 88300, train_perplexity=7.690275
+Total time: 49853.77702689171
+Batch 88400, train_perplexity=7.812415
+Total time: 49909.9835293293
+Batch 88500, train_perplexity=9.31494
+Total time: 49966.352266550064
+Batch 88600, train_perplexity=8.765237
+Total time: 50023.138508319855
+Batch 88700, train_perplexity=8.083041
+Total time: 50079.120636701584
+Batch 88800, train_perplexity=8.053546
+Total time: 50139.186722278595
+Batch 88900, train_perplexity=8.628312
+Total time: 50195.28473687172
+Batch 89000, train_perplexity=8.416919
+Total time: 50251.82957863808
+Batch 89100, train_perplexity=8.046917
+Total time: 50308.11391186714
+Batch 89200, train_perplexity=7.803807
+Total time: 50364.5741815567
+Batch 89300, train_perplexity=8.294163
+Total time: 50420.994284152985
+Batch 89400, train_perplexity=9.236115
+Total time: 50477.110337495804
+Batch 89500, train_perplexity=8.528504
+Total time: 50533.359046936035
+Batch 89600, train_perplexity=8.268262
+Total time: 50589.53091788292
+Batch 89700, train_perplexity=8.171658
+Total time: 50645.56144618988
+Batch 89800, train_perplexity=8.403379
+Total time: 50701.595249176025
+Batch 89900, train_perplexity=8.001366
+Total time: 50757.855666399
+Batch 90000, train_perplexity=7.128826
+Total time: 50814.084182024
+Batch 90100, train_perplexity=8.981854
+Total time: 50873.96253466606
+Batch 90200, train_perplexity=7.9902062
+Total time: 50930.37945485115
+Batch 90300, train_perplexity=8.4542055
+Total time: 50986.63692736626
+Batch 90400, train_perplexity=8.651808
+Total time: 51042.85099172592
+Batch 90500, train_perplexity=8.506775
+Total time: 51099.02503108978
+Batch 90600, train_perplexity=8.100673
+Total time: 51155.143471241
+Batch 90700, train_perplexity=8.0711155
+Total time: 51211.169325590134
+Batch 90800, train_perplexity=8.030971
+Total time: 51267.363914489746
+Batch 90900, train_perplexity=8.377242
+Total time: 51323.85829949379
+Batch 91000, train_perplexity=8.271171
+Total time: 51380.11768579483
+Batch 91100, train_perplexity=8.667217
+Total time: 51436.615016937256
+Batch 91200, train_perplexity=8.267443
+Total time: 51493.00800013542
+Batch 91300, train_perplexity=7.4486713
+Total time: 51552.14889335632
+Batch 91400, train_perplexity=8.146742
+Total time: 51608.66059589386WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+
+Batch 91500, train_perplexity=8.610174
+Total time: 51664.724648952484
+Batch 91600, train_perplexity=8.492859
+Total time: 51720.68337059021
+Batch 91700, train_perplexity=8.174327
+Total time: 51776.77942085266
+Batch 91800, train_perplexity=8.309463
+Total time: 51832.91332983971
+Batch 91900, train_perplexity=8.296567
+Total time: 51888.93331003189
+Batch 92000, train_perplexity=8.204918
+Total time: 51945.03380560875
+Batch 92100, train_perplexity=8.344495
+Total time: 52000.888843774796
+Batch 92200, train_perplexity=8.006228
+Total time: 52057.474395275116
+Batch 92300, train_perplexity=7.1781516
+Total time: 52119.045578718185
+Batch 92400, train_perplexity=8.262904
+Total time: 52173.823454380035
+Batch 92500, train_perplexity=8.236149
+Total time: 52227.05282330513
+Batch 92600, train_perplexity=8.0102415
+Total time: 52283.198204278946
+Batch 92700, train_perplexity=7.6490116
+Total time: 52336.22014570236
+Batch 92800, train_perplexity=7.8525195
+Total time: 52389.44027066231
+Batch 92900, train_perplexity=8.762851
+Total time: 52442.45874428749
+Batch 93000, train_perplexity=9.321052
+Total time: 52495.51087927818
+Batch 93100, train_perplexity=9.293886
+Total time: 52548.48849415779
+Batch 93200, train_perplexity=8.086096
+Total time: 52601.80034947395
+Batch 93300, train_perplexity=8.394849
+Total time: 52654.80258393288
+Batch 93400, train_perplexity=7.98881
+Total time: 52707.90890622139
+Batch 93500, train_perplexity=9.189259
+Total time: 52761.036974191666
+Batch 93600, train_perplexity=8.324292
+Total time: 52814.097101688385
+Batch 93700, train_perplexity=8.660453
+Total time: 52867.24811506271
+Batch 93800, train_perplexity=8.180168
+Total time: 52923.763223171234
+Batch 93900, train_perplexity=7.414714
+Total time: 52976.84003663063
+Batch 94000, train_perplexity=8.004338
+Total time: 53030.0158097744
+Batch 94100, train_perplexity=7.865874
+Total time: 53083.225085020065
+Batch 94200, train_perplexity=8.716792
+Total time: 53136.30896449089
+Batch 94300, train_perplexity=8.3921995
+Total time: 53189.62141942978
+Batch 94400, train_perplexity=8.190476
+Total time: 53243.24768781662
+Batch 94500, train_perplexity=8.508828
+Total time: 53299.41856479645
+Batch 94600, train_perplexity=9.194003
+Total time: 53355.91474509239
+Batch 94700, train_perplexity=8.368449
+Total time: 53412.47756266594
+Batch 94800, train_perplexity=7.812374
+Total time: 53468.754811525345
+Batch 94900, train_perplexity=8.871828
+Total time: 53524.84470844269
+Batch 95000, train_perplexity=8.416914
+Total time: 53580.96067428589
+Batch 95100, train_perplexity=7.9281354
+Total time: 53640.4341070652
+Batch 95200, train_perplexity=8.244412
+Total time: 53694.67944478989
+Batch 95300, train_perplexity=7.7450933
+Total time: 53749.20798301697
+Batch 95400, train_perplexity=8.560577
+Total time: 53805.30673742294
+Batch 95500, train_perplexity=8.028878
+Total time: 53861.09500455856
+Batch 95600, train_perplexity=8.482067
+Total time: 53917.127652168274
+Batch 95700, train_perplexity=7.6975193
+Total time: 53973.308404922485
+Batch 95800, train_perplexity=8.756345
+Total time: 54029.518114328384
+Batch 95900, train_perplexity=7.9253044
+Total time: 54085.4105257988
+Batch 96000, train_perplexity=8.752849
+Total time: 54141.69149160385
+Batch 96100, train_perplexity=8.032602
+Total time: 54197.87796854973
+Batch 96200, train_perplexity=8.939527
+Total time: 54253.820603609085
+Batch 96300, train_perplexity=8.428369
+Total time: 54313.30933094025
+Batch 96400, train_perplexity=8.670741
+Total time: 54369.355392456055
+Batch 96500, train_perplexity=8.630197
+Total time: 54425.51994013786
+Batch 96600, train_perplexity=8.073925
+Total time: 54481.686413526535
+Batch 96700, train_perplexity=7.9714217
+Total time: 54537.86733627319
+Batch 96800, train_perplexity=8.376843
+Total time: 54593.807557582855
+Batch 96900, train_perplexity=8.587508
+Total time: 54649.57256269455
+Batch 97000, train_perplexity=7.5981336
+Total time: 54705.413589954376
+Batch 97100, train_perplexity=8.990735
+Total time: 54761.890135765076
+Batch 97200, train_perplexity=8.429394
+Total time: 54817.818985939026
+Batch 97300, train_perplexity=8.0330925
+Total time: 54874.06791114807
+Batch 97400, train_perplexity=8.101939
+Total time: 54930.55204415321
+Batch 97500, train_perplexity=8.216783
+Total time: 54986.752778053284
+Batch 97600, train_perplexity=7.778978
+Total time: 55045.60614013672
+Batch 97700, train_perplexity=8.327919
+Total time: 55101.83126807213
+Batch 97800, train_perplexity=8.672764
+Total time: 55157.71276330948
+Batch 97900, train_perplexity=8.519428
+Total time: 55213.59371757507
+Batch 98000, train_perplexity=9.0788355
+Total time: 55270.00205421448
+Batch 98100, train_perplexity=8.7309065
+Total time: 55325.98073196411
+Batch 98200, train_perplexity=8.1021595
+Total time: 55381.84179663658
+Batch 98300, train_perplexity=8.754954
+Total time: 55438.074424266815
+Batch 98400, train_perplexity=7.8504825
+Total time: 55494.50190067291
+Batch 98500, train_perplexity=7.6671567
+Total time: 55550.75764989853
+Batch 98600, train_perplexity=8.619676
+Total time: 55606.93423485756
+Batch 98700, train_perplexity=7.843961
+Total time: 55663.403800964355
+Batch 98800, train_perplexity=7.7534113
+Total time: 55722.887246370316
+Batch 98900, train_perplexity=8.225658
+Total time: 55778.832906484604
+Batch 99000, train_perplexity=7.643171
+Total time: 55835.191514492035
+Batch 99100, train_perplexity=8.366855
+Total time: 55891.207394599915
+Batch 99200, train_perplexity=8.557014
+Total time: 55947.3005027771
+Batch 99300, train_perplexity=9.038761
+Total time: 56003.41309118271
+Batch 99400, train_perplexity=8.287904
+Total time: 56059.825875520706
+Batch 99500, train_perplexity=8.095711
+Total time: 56116.22656130791
+Batch 99600, train_perplexity=8.227123
+Total time: 56172.168536663055
+Batch 99700, train_perplexity=8.716114
+Total time: 56228.18716788292
+Batch 99800, train_perplexity=8.253514
+Total time: 56284.477424144745
+Batch 99900, train_perplexity=7.9404087
+Total time: 56340.535104990005
+Batch 100000, train_perplexity=8.202059
+Total time: 56396.80671072006
+Batch 100100, train_perplexity=8.163608
+Total time: 56456.293590545654
+Batch 100200, train_perplexity=8.128965
+Total time: 56512.51390171051
+Batch 100300, train_perplexity=8.737272
+Total time: 56568.785740852356
+Batch 100400, train_perplexity=7.7941084
+Total time: 56624.76302361488
+Batch 100500, train_perplexity=9.023906
+Total time: 56680.7399084568
+Batch 100600, train_perplexity=8.331025
+Total time: 56737.140607357025
+Batch 100700, train_perplexity=8.618221
+Total time: 56793.37003874779
+Batch 100800, train_perplexity=8.009142
+Total time: 56849.53686904907
+Batch 100900, train_perplexity=8.449388
+Total time: 56905.90310239792
+Batch 101000, train_perplexity=8.121542
+Total time: 56962.35254025459
+Batch 101100, train_perplexity=9.115643
+Total time: 57018.72950220108
+Batch 101200, train_perplexity=8.375876
+Total time: 57075.354545116425
+Batch 101300, train_perplexity=8.213669
+Total time: 57134.79368805885
+Batch 101400, train_perplexity=8.095713
+Total time: 57190.88061332703
+Batch 101500, train_perplexity=8.02904
+Total time: 57247.21562457085
+Batch 101600, train_perplexity=7.811359
+Total time: 57303.36738872528
+Batch 101700, train_perplexity=8.435412
+Total time: 57359.447912454605
+Batch 101800, train_perplexity=7.9511557
+Total time: 57415.89198875427
+Batch 101900, train_perplexity=8.538848
+Total time: 57472.14709687233
+Batch 102000, train_perplexity=8.668094
+Total time: 57528.18414592743
+Batch 102100, train_perplexity=8.06669
+Total time: 57584.53162789345
+Batch 102200, train_perplexity=8.327379
+Total time: 57640.73182916641
+Batch 102300, train_perplexity=9.1665535
+Total time: 57696.93194270134
+Batch 102400, train_perplexity=8.359324
+Total time: 57753.29757499695
+Batch 102500, train_perplexity=8.325956
+Total time: 57809.71450352669
+Batch 102600, train_perplexity=8.844111
+Total time: 57869.42208147049
+Batch 102700, train_perplexity=8.296801
+Total time: 57925.277094602585
+Batch 102800, train_perplexity=8.41427
+Total time: 57981.79242730141
+Batch 102900, train_perplexity=8.378149
+Total time: 58038.37102770805
+Batch 103000, train_perplexity=8.79113
+Total time: 58094.28197789192
+Batch 103100, train_perplexity=8.117936
+Total time: 58150.65253806114
+Batch 103200, train_perplexity=8.661722WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+
+Total time: 58206.41666889191
+Batch 103300, train_perplexity=8.065594
+Total time: 58262.52337527275
+Batch 103400, train_perplexity=8.025347
+Total time: 58318.87465119362
+Batch 103500, train_perplexity=8.7434635
+Total time: 58375.003217458725
+Batch 103600, train_perplexity=8.4432745
+Total time: 58431.58543300629
+Batch 103700, train_perplexity=8.599804
+Total time: 58488.07604765892
+Batch 103800, train_perplexity=8.1194515
+Total time: 58547.59595298767
+Batch 103900, train_perplexity=8.379634
+Total time: 58603.868985414505
+Batch 104000, train_perplexity=8.499169
+Total time: 58660.065062999725
+Batch 104100, train_perplexity=8.170354
+Total time: 58716.27805733681
+Batch 104200, train_perplexity=8.436419
+Total time: 58771.98529076576
+Batch 104300, train_perplexity=9.002614
+Total time: 58828.477440834045
+Batch 104400, train_perplexity=8.577302
+Total time: 58884.737543821335
+Batch 104500, train_perplexity=8.229116
+Total time: 58940.86013507843
+Batch 104600, train_perplexity=8.722588
+Total time: 58997.01826381683
+Batch 104700, train_perplexity=8.724997
+Total time: 59053.29601144791
+Batch 104800, train_perplexity=8.540202
+Total time: 59109.328753471375
+Batch 104900, train_perplexity=8.908565
+Total time: 59165.80526971817
+Batch 105000, train_perplexity=8.107963
+Total time: 59222.13068938255
+Batch 105100, train_perplexity=8.307759
+Total time: 59281.77516269684
+Batch 105200, train_perplexity=8.37254
+Total time: 59338.07785964012
+Batch 105300, train_perplexity=9.06661
+Total time: 59394.420065164566
+Batch 105400, train_perplexity=8.269727
+Total time: 59450.73869919777
+Batch 105500, train_perplexity=7.437999
+Total time: 59506.689423561096
+Batch 105600, train_perplexity=8.236074
+Total time: 59563.02816987038
+Batch 105700, train_perplexity=8.434894
+Total time: 59619.21123242378
+Batch 105800, train_perplexity=7.595453
+Total time: 59675.817415714264
+Batch 105900, train_perplexity=7.98031
+Total time: 59730.47232079506
+Batch 106000, train_perplexity=8.470589
+Total time: 59783.471519470215
+Batch 106100, train_perplexity=8.158268
+Total time: 59838.86454105377
+Batch 106200, train_perplexity=8.056619
+Total time: 59895.10144376755
+Batch 106300, train_perplexity=8.318275
+Total time: 59954.540137052536
+Batch 106400, train_perplexity=8.440495
+Total time: 60010.940640211105
+Batch 106500, train_perplexity=8.367446
+Total time: 60067.20676636696
+Batch 106600, train_perplexity=8.930843
+Total time: 60123.35812687874
+Batch 106700, train_perplexity=8.854863
+Total time: 60179.69457745552
+Batch 106800, train_perplexity=7.8875623
+Total time: 60236.1459312439
+Batch 106900, train_perplexity=8.282794
+Total time: 60292.36541056633
+Batch 107000, train_perplexity=8.159235
+Total time: 60348.154455661774
+Batch 107100, train_perplexity=8.447373
+Total time: 60404.07787847519
+Batch 107200, train_perplexity=7.9884634
+Total time: 60460.01756930351
+Batch 107300, train_perplexity=8.482003
+Total time: 60516.62140750885
+Batch 107400, train_perplexity=8.337308
+Total time: 60572.8263232708
+Batch 107500, train_perplexity=8.485187
+Total time: 60628.64122200012
+Batch 107600, train_perplexity=7.863082
+Total time: 60687.79986333847
+Batch 107700, train_perplexity=8.271376
+Total time: 60743.96345639229
+Batch 107800, train_perplexity=8.42217
+Total time: 60799.969807863235
+Batch 107900, train_perplexity=8.348348
+Total time: 60856.1932246685
+Batch 108000, train_perplexity=7.534767
+Total time: 60912.46842575073
+Batch 108100, train_perplexity=7.753302
+Total time: 60968.554493665695
+Batch 108200, train_perplexity=7.5359097
+Total time: 61025.09942102432
+Batch 108300, train_perplexity=8.503377
+Total time: 61081.41089057922
+Batch 108400, train_perplexity=7.97665
+Total time: 61137.632462501526
+Batch 108500, train_perplexity=7.8922443
+Total time: 61194.021325588226
+Batch 108600, train_perplexity=7.9295797
+Total time: 61250.425612688065
+Batch 108700, train_perplexity=7.943239
+Total time: 61306.52090382576
+Batch 108800, train_perplexity=8.181395
+Total time: 61366.38240003586
+Batch 108900, train_perplexity=8.136967
+Total time: 61422.546571969986
+Batch 109000, train_perplexity=9.116519
+Total time: 61479.039366960526
+Batch 109100, train_perplexity=7.702386
+Total time: 61535.487840890884
+Batch 109200, train_perplexity=7.972011
+Total time: 61591.85128068924
+Batch 109300, train_perplexity=8.222584
+Total time: 61648.28004384041
+Batch 109400, train_perplexity=7.6579857
+Total time: 61704.643876075745
+Batch 109500, train_perplexity=8.854289
+Total time: 61760.506368637085
+Batch 109600, train_perplexity=8.180616
+Total time: 61816.72986245155
+Batch 109700, train_perplexity=7.634063
+Total time: 61873.221804857254
+Batch 109800, train_perplexity=8.114106
+Total time: 61929.42023921013
+Batch 109900, train_perplexity=8.180491
+Total time: 61985.7439353466
+Batch 110000, train_perplexity=7.8478737
+Total time: 62041.56418251991
+Batch 110100, train_perplexity=8.438832
+Total time: 62100.93280982971
+Batch 110200, train_perplexity=8.2535305
+Total time: 62157.208589076996
+Batch 110300, train_perplexity=7.5814943
+Total time: 62213.43252015114
+Batch 110400, train_perplexity=8.50822
+Total time: 62269.83976531029
+Batch 110500, train_perplexity=8.251941
+Total time: 62325.738406419754
+Batch 110600, train_perplexity=7.9654946
+Total time: 62382.035294532776
+Batch 110700, train_perplexity=8.189588
+Total time: 62438.23438024521
+Batch 110800, train_perplexity=8.452332
+Total time: 62494.22030878067
+Batch 110900, train_perplexity=7.9591236
+Total time: 62550.61291003227
+Batch 111000, train_perplexity=8.026503
+Total time: 62606.90955018997
+Batch 111100, train_perplexity=6.538424
+Total time: 62663.02067756653
+Batch 111200, train_perplexity=7.5855536
+Total time: 62719.310354709625
+Batch 111300, train_perplexity=8.373301
+Total time: 62779.16075205803
+Batch 111400, train_perplexity=7.6844964
+Total time: 62835.35471558571
+Batch 111500, train_perplexity=8.400046
+Total time: 62891.36152648926
+Batch 111600, train_perplexity=8.77722
+Total time: 62947.32991671562
+Batch 111700, train_perplexity=7.6817927
+Total time: 63003.62922048569
+Batch 111800, train_perplexity=7.301411
+Total time: 63059.65443563461
+Batch 111900, train_perplexity=8.169106
+Total time: 63116.13224029541
+Batch 112000, train_perplexity=8.422647
+Total time: 63172.01935315132
+Batch 112100, train_perplexity=8.200817
+Total time: 63228.70554566383
+Batch 112200, train_perplexity=7.844458
+Total time: 63284.97965669632
+Batch 112300, train_perplexity=9.087286
+Total time: 63341.04348731041
+Batch 112400, train_perplexity=8.192242
+Total time: 63397.35827589035
+Batch 112500, train_perplexity=8.06922
+Total time: 63453.69277334213
+Batch 112600, train_perplexity=7.7411814
+Total time: 63512.88353729248
+Batch 112700, train_perplexity=8.383516
+Total time: 63568.873067379
+Batch 112800, train_perplexity=8.941099
+Total time: 63624.965957164764
+Batch 112900, train_perplexity=8.275589
+Total time: 63681.03582906723
+Batch 113000, train_perplexity=8.054737
+Total time: 63737.39039182663
+Batch 113100, train_perplexity=7.693908
+Total time: 63793.378014326096
+Batch 113200, train_perplexity=8.819597
+Total time: 63849.44879817963
+Batch 113300, train_perplexity=8.2611
+Total time: 63905.69219708443
+Batch 113400, train_perplexity=8.200361
+Total time: 63962.14713859558
+Batch 113500, train_perplexity=7.970525
+Total time: 64018.27631831169
+Batch 113600, train_perplexity=8.3521805
+Total time: 64074.27745509148
+Batch 113700, train_perplexity=7.7887435
+Total time: 64130.23409438133
+Batch 113800, train_perplexity=8.270286
+Total time: 64190.26524734497
+Batch 113900, train_perplexity=7.888465
+Total time: 64246.90893578529
+Batch 114000, train_perplexity=8.781959
+Total time: 64302.87392258644
+Batch 114100, train_perplexity=7.8684754
+Total time: 64359.177851200104
+Batch 114200, train_perplexity=7.287014
+Total time: 64415.31147956848
+Batch 114300, train_perplexity=8.737907
+Total time: 64471.47357416153
+Batch 114400, train_perplexity=7.1852326
+Total time: 64528.1461045742
+Batch 114500, train_perplexity=8.375022
+Total time: 64584.743803977966
+Batch 114600, train_perplexity=8.100929
+Total time: 64640.795833826065
